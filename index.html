@@ -9,6 +9,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/0b10d58be2.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css" type="text/css">
     <title>Pottermost</title>
 </head>
@@ -39,7 +40,7 @@
                             height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
                     </div>
                 </div>
-                <p class="text-right"><span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span></p>
+                <p class="text-right"><span style="font-size:30px;cursor:pointer" onmouseover="openNav()">&#9776;</span></p>
                 <!--navbar ends-->
 
             </div>
@@ -50,74 +51,94 @@
 
 
 
-    <!--searching characters starts-->
-    <section class="searching">
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <p class="h2 text-center">Search Your Favourite Character</p>
-                </div>
-            </div>
 
-            <form>
+
+    <!--searching characters starts-->
+    <div class="searchingContainer">
+        <section class="searching">
+            <div class="container-fluid">
+
                 <div class="row">
                     <div class="col">
-                        <input id="charName" type="text" class="form-control float-left" value="" placeholder="E.g. Harry Potter"
-                            style="width: 75%;">
-                        <button id="charSearch" type="submit" class="btn btn-primary" value="search" style="width:25%;">Search</button>
+                        <p class="h2 text-center"><span class="fontPic">H </span>Search Your Favourite Character</p>
+                        <hr>
                     </div>
                 </div>
-            </form>
 
-            <div class="card mb-3 mx-auto" style="max-width: 540px;">
-                <div class="row no-gutters">
-                    <div class="col-md-4">
-                        <div class="card-img" alt="Character's picture"></div>
+                <form>
+                    <div class="row">
+                        <div class="col">
+                            <input id="charName" type="text" class="form-control float-left" value=""
+                                placeholder="E.g. Harry Potter" style="width: 90%;">
+                            <button id="charSearch" type="submit" class="btn btn-warning" value="search"
+                                style="width:10%;"><i class="fas fa-search"></i></button>
+                        </div>
                     </div>
-                    <div class="col-md-8">
-                        <div class="card-body">
-                            <h5 class="card-title"></h5>
-                            <hr>
-                            <p class="card-text">
-                                <div class="container">
-                                    <div class="row">
-                                        <div class="col">Date of Birth</div>
-                                        <div id="dob" class="col"></div>
-                                        <div class="w-100"></div>
-                                        <div class="col">House</div>
-                                        <div id="house" class="col"></div>
-                                        <div class="w-100"></div>
-                                        <div class="col">Ancestry</div>
-                                        <div id="ancestry" class="col"></div>
-                                        <div class="w-100"></div>
-                                        <div class="col">Patronus</div>
-                                        <div id="patronus" class="col"></div>
-                                        <div class="w-100"></div>
-                                        <div class="col">
-                                            <div class="col">Wand</div>
-                                            <div class="container">
-                                                <div class="row">
-                                                    <div class="col">wood</div>
-                                                    <div id="wood" class="col"></div>
-                                                    <div class="w-100"></div>
-                                                    <div class="col">core</div>
-                                                    <div id="core" class="col"></div>
+                </form>
+
+
+                <div class="row">
+                    <div class="col">
+                        <p class="suggestion mx-auto">
+                            Suggestions:&emsp;
+                            <span>Hermione Granger <span class="fontPic">G</span></span>&ensp; 
+                            <span>Severus Snape <span class="fontPic">c</span></span>&ensp; 
+                            <span>Ron Weasley <span class="fontPic">R</span></span>
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="card mb-3 mx-auto" style="max-width: 540px;">
+                    <div class="row no-gutters align-items-center">
+                        <div class="col-md-4">
+                            <div class="card-img img-thumbnail" alt="Character's picture"></div>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title"></h5>
+                                <hr>
+                                <p class="card-text">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col text-muted"><strong>Date of Birth</strong></div>
+                                            <div id="dob" class="col"></div>
+                                            <div class="w-100"></div>
+                                            <div class="col text-muted"><strong>House</strong></div>
+                                            <div id="house" class="col"></div>
+                                            <div class="w-100"></div>
+                                            <div class="col text-muted"><strong>Ancestry</strong></div>
+                                            <div id="ancestry" class="col"></div>
+                                            <div class="w-100"></div>
+                                            <div class="col text-muted"><strong>Patronus</strong></div>
+                                            <div id="patronus" class="col"></div>
+                                            <div class="w-100"></div>
+                                            <div class="col">
+                                                <strong class="text-muted">Wand</strong>
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div class="col text-muted"><strong>wood :</strong></div>
+                                                        <div id="wood" class="col"></div>
+                                                        <div class="w-100"></div>
+                                                        <div class="col text-muted"><strong>core :</strong></div>
+                                                        <div id="core" class="col"></div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                            </p>
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </div>
     <!--searching characters ends-->
 
 
-    
+
 
 
 
