@@ -20,7 +20,7 @@
     <section class="masthead">
         <div class="container-fluid">
             <div class="item">
-                <img src="img/logo1.png" class="img-fluid logo">
+                <img src="img/logo1.png" class="img-fluid logo" alt="harryPotterLogo">
             </div>
             <div class="item">
                 <p class="h1 text-center">Welcome to Pottermost</p>
@@ -33,14 +33,15 @@
                     <div class="overlay-content">
                         <a href="#">Search characters</a>
                         <a href="#">Play game</a>
-                        <a href="#">Gallery</a>    
+                        <a href="#">Gallery</a>
                         <a href="#">Events</a><br><br>
-                        <a href="#"><iframe src="https://open.spotify.com/embed/album/6zeHM5CV0CjcS0K8ouWE4N" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></a>                       
+                        <iframe src="https://open.spotify.com/embed/album/6zeHM5CV0CjcS0K8ouWE4N" width="300"
+                            height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
                     </div>
                 </div>
                 <p class="text-right"><span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span></p>
                 <!--navbar ends-->
-                
+
             </div>
         </div>
     </section>
@@ -49,6 +50,27 @@
 
 
 
+    <!--searching characters starts-->
+    <section class="searching">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <p class="h2 text-center">Search Your Favourite Character</p>
+                </div>
+            </div>
+
+            <form>
+                <div class="row">
+                    <div class="col">
+                        <input type="text" class="form-control float-left" value="" placeholder="E.g. Harry Potter" style="width: 75%;">
+                        <button type="submit" class="btn btn-primary" value="search" style="25%">Search</button>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+    </section>
+    <!--searching characters ends-->
 
 
 
@@ -56,7 +78,6 @@
 
 
 
-  
 
 
     <script src="https://code.jquery.com/jquery-3.5.0.min.js"

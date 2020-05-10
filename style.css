@@ -9,7 +9,6 @@
 }
 
 body {
-    font-family: 'AbrilFatface-Regular';
     margin: 0;
 }
 
@@ -75,8 +74,14 @@ body {
 
 
 
-.container-fluid {
-    height: 60vh;
+/*  masthead section */
+
+.masthead {
+    font-family: 'AbrilFatface-Regular';
+}
+
+.masthead .container-fluid {
+    height: 65vh;
     background-image: url('img/178051.jpg');
     background-size: cover;
     background-repeat: no-repeat; 
@@ -103,10 +108,17 @@ img {
     height: 150px;
 }
 
-.logo{
+.masthead .logo{
     margin-top: 1rem;
 }
 
-span, .h1 {
+.masthead span, .masthead .h1 {
     color: white; 
 }
+
+
+
+
+
+
+/* searching characters section*/
