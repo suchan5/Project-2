@@ -32,13 +32,40 @@
   
             for (let n of msg) {
               if (userInput.toLowerCase() === (n.name).toLowerCase ()) {
-                $( ".card-title" ).append( `<strong>${n.name}</strong>` );
+                $( ".card-title" ).html("");
+                $( ".card-title" ).append( `<strong>${n.name}</strong>` )
+                
+                $( ".card-img" ).html("");
                 $( ".card-img" ).append( `<img src="${n.image}"/>` );
+
+                $( "#house" ).html("");
                 $( "#house" ).append( `${n.house}` );
+
+
+                if (n.house === 'Gryffindor') {
+                  $( ".card-title" ).append( '<img src="/img/gryffindor.png">' );
+                } else if (n.house === 'Slytherin') {
+                  $( ".card-title" ).append( '<img src="/img/slytherin.png">' );
+                } else if (n.house === 'Ravenclaw') {
+                  $( ".card-title" ).append( '<img src="/img/ravenclaw.png">' );
+                } else if (n.house === 'Hufflepuff') {
+                  $( ".card-title" ).append( '<img src="/img/hufflepuff.png" >' );    
+                } 
+
+
+                $( "#wood" ).html("");
                 $( "#wood" ).append( `${n.wand.wood}` );
+
+                $( "#core" ).html("");
                 $( "#core" ).append( `${n.wand.core}` );
+
+                $( "#ancestry" ).html("");
                 $( "#ancestry" ).append( `${n.ancestry}` );
+
+                $( "#patronus" ).html("");
                 $( "#patronus" ).append( `${n.patronus}` );
+
+                $( "#dob" ).html("");
                 $( "#dob" ).append( `${n.dateOfBirth}` ); 
               }
                 
