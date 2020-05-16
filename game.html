@@ -1,24 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dementor Game</title>
     <link rel="stylesheet" href="game.css" type="text/css">
 </head>
+
 <body>
-  
-    <div class="dementor a"></div>
-    <div class="dementor b"></div>
-    <div class="dementor c"></div>
-    <div class="dementor d"></div>
+
+    <div class="stage">
+        <div>
+            <h1>Help!</h1>
+            <p>Hogwarts is attacked</p>
+            <p>Click on the flying Dementors to get rid of them</p>
+            <p>
+                <input id="easyMode" class="btn" type="button" value="Easy">
+                <input id="hardMode" class="btn" type="button" value="Hard">
+            </p>
+
+        </div>
+        <div class="stageEasy">
+            <div class="dementor a"></div>
+            <div class="dementor b"></div>
+            <div class="dementor c"></div>
+            <div class="dementor d"></div>
+        </div>
+        <div class="stageHard">
+            <div class="dementor a"></div>
+            <div class="dementor b"></div>
+            <div class="dementor c"></div>
+            <div class="dementor d"></div>
+            <div class="dementor e"></div>
+            <div class="dementor f"></div>
+        </div>
+    </div>
 
 
 
 
 
 
+
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js"
+        integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+    <script src="game.js"></script>
 
 
 </body>
+
 </html>

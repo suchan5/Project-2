@@ -8,6 +8,9 @@ body {
     margin: 0;
 }
 
+
+
+
 @keyframes moving {
     from {
         transform: translateX(0);
@@ -17,6 +20,15 @@ body {
     }
 }
 
+
+
+p{
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+}
 
 .dementor {
     position: absolute;
@@ -54,5 +66,19 @@ body {
     bottom: 10%;
     background-image: url('img/dementor4.png');
     animation-duration: 4s;
+}
+
+.dementor.e {
+    left: 10%;
+    bottom: 24%;
+    background-image: url('img/dementor5.png');
+    animation-duration: 3s;
+}
+
+.dementor.f {
+    left: 26%;
+    bottom: 7%;
+    background-image: url('img/dementor6.png');
+    animation-duration: 1s;
 }
 
