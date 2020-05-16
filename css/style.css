@@ -1,11 +1,11 @@
 @font-face {
     font-family: 'AbrilFatface-Regular';
-    src: url('fonts/AbrilFatface-Regular.ttf') format('truetype'); 
+    src: url('/fonts/AbrilFatface-Regular.ttf') format('truetype'); 
 }
 
 @font-face {       
     font-family: 'HarryPotterAndTheDingbats-LKKg';
-    src: url('fonts/HarryPotterAndTheDingbats-LKKg.ttf') format('truetype'); 
+    src: url('/fonts/HarryPotterAndTheDingbats-LKKg.ttf') format('truetype'); 
 }
 
 body {
@@ -81,7 +81,7 @@ body {
 
 .masthead .container-fluid {
     height: 65vh;
-    background-image: url('img/178051.jpg');
+    background-image: url('/img/lkkkkk.jpg');
     background-size: cover;
     background-repeat: no-repeat; 
     background-position: center; 

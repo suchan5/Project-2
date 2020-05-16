@@ -19,6 +19,23 @@ $(function () {
 })();
 
 
+
+
+// when user clicks Replay button : page reloaded
+(function () {
+    const replay = document.querySelector('#replay');
+
+    function clickEasyModeHandler(e) {
+        document.location.reload();
+    };
+
+    replay.addEventListener('click', clickEasyModeHandler);
+})();
+
+
+
+
+
 // when user clicks Easy-mode button
 (function () {
     const easyMode = document.querySelector('#easyMode');

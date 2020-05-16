@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'AbrilFatface-Regular';
-    src: url('font/AbrilFatface-Regular.ttf') format('truetype'); 
+    src: url('/fonts/AbrilFatface-Regular.ttf') format('truetype'); 
 }
 
 
@@ -9,6 +9,27 @@ body {
 }
 
 
+.stage {
+    overflow: hidden;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('/img/7.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;  
+    background-position: center; 
+    font-family: 'AbrilFatface-Regular';
+    cursor: pointer;
+}
+
+p{
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    color: red;
+}
 
 
 @keyframes moving {
@@ -22,13 +43,7 @@ body {
 
 
 
-p{
-    text-align: center;
-}
 
-h1 {
-    text-align: center;
-}
 
 .dementor {
     position: absolute;
@@ -43,43 +58,48 @@ h1 {
 .dementor.a {
     left: 2%;
     bottom: 5%;
-    background-image: url('img/dementor1.png');
+    background-image: url('/img/dementor1.png');
     animation-duration: 5s;
 }
 
 .dementor.b {
     left: 2%;
     bottom: 15%;
-    background-image: url('img/dementor2.png');
+    background-image: url('/img/dementor2.png');
     animation-duration: 1s;
 }
 
 .dementor.c {
     left: 2%;
     bottom: 15%;
-    background-image: url('img/dementor3.png');
+    background-image: url('/img/dementor3.png');
     animation-duration:6s;
 }
 
 .dementor.d {
     left: 6%;
     bottom: 10%;
-    background-image: url('img/dementor4.png');
+    background-image: url('/img/dementor4.png');
     animation-duration: 4s;
 }
 
 .dementor.e {
     left: 10%;
     bottom: 24%;
-    background-image: url('img/dementor5.png');
+    background-image: url('/img/dementor5.png');
     animation-duration: 3s;
 }
 
 .dementor.f {
     left: 26%;
     bottom: 7%;
-    background-image: url('img/dementor6.png');
+    background-image: url('/img/dementor6.png');
     animation-duration: 1s;
+}
+
+
+#replay {
+    margin-left: 5px;
 }
 
 .active {
