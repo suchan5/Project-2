@@ -37,7 +37,7 @@ h1 {
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: contain;
-    animation: moving infinite
+    animation: moving infinite alternate;
 }
 
 .dementor.a {
@@ -82,3 +82,18 @@ h1 {
     animation-duration: 1s;
 }
 
+.active {
+    background: #666;
+}
+
+.inactive {
+    background: silver;
+}
+
+reset {
+    display: none;
+}
+
+.btn {
+    color: white;
+}
