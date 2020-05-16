@@ -1,0 +1,58 @@
+@font-face {
+    font-family: 'AbrilFatface-Regular';
+    src: url('font/AbrilFatface-Regular.ttf') format('truetype'); 
+}
+
+
+body {
+    margin: 0;
+}
+
+@keyframes moving {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(80vw);
+    }
+}
+
+
+.dementor {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: contain;
+    animation: moving infinite
+}
+
+.dementor.a {
+    left: 2%;
+    bottom: 5%;
+    background-image: url('img/dementor1.png');
+    animation-duration: 5s;
+}
+
+.dementor.b {
+    left: 2%;
+    bottom: 15%;
+    background-image: url('img/dementor2.png');
+    animation-duration: 1s;
+}
+
+.dementor.c {
+    left: 2%;
+    bottom: 15%;
+    background-image: url('img/dementor3.png');
+    animation-duration:6s;
+}
+
+.dementor.d {
+    left: 6%;
+    bottom: 10%;
+    background-image: url('img/dementor4.png');
+    animation-duration: 4s;
+}
+

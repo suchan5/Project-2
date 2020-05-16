@@ -43,13 +43,13 @@
 
 
                 if (n.house === 'Gryffindor') {
-                  $( ".card-title" ).append( '<img src="/img/gryffindor.png">' );
+                  $( ".card-title" ).append( '<img src="img/gryffindor.png">' );
                 } else if (n.house === 'Slytherin') {
-                  $( ".card-title" ).append( '<img src="/img/slytherin.png">' );
+                  $( ".card-title" ).append( '<img src="img/slytherin.png">' );
                 } else if (n.house === 'Ravenclaw') {
-                  $( ".card-title" ).append( '<img src="/img/ravenclaw.png">' );
+                  $( ".card-title" ).append( '<img src="img/ravenclaw.png">' );
                 } else if (n.house === 'Hufflepuff') {
-                  $( ".card-title" ).append( '<img src="/img/hufflepuff.png" >' );    
+                  $( ".card-title" ).append( '<img src="img/hufflepuff.png" >' );    
                 } 
 
 
