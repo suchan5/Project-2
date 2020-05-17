@@ -228,6 +228,7 @@ img {
 
 .game .btnPosition {
     text-align: right;
+    width: 50%;
 }
 
 .game .button:hover {

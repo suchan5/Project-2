@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/0b10d58be2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="/css/style.css" type="text/css">
     <title>Pottermost</title>
 </head>
@@ -145,7 +146,7 @@
     <!--Dementor game starts-->
     <section class="game">
         <div class="container">
-            <div class="gamestory mx-auto">
+            <div class="gamestory mx-auto" data-aos="fade-right">
                 <h1>Dementors!</h1>
                 <p>
                     They suck the souls out of the victims, leaving them in a state worse than death. Dementors’ kisses
@@ -153,9 +154,9 @@
                     These dark creatures of the Azkaban have broken into Hogwarts despite Headmaster Dumbledore’s stern
                     refusal to let them in. Lets help to fight the Dementors off Hogwarts!
                 </p>
-                <div class="btnPosition">
-                    <a href="game.html" class="button">Save Hogwarts</a>
-                </div>
+            </div>
+            <div class="btnPosition mx-auto" data-aos="fade-left">
+                <a href="game.html" class="button">Save Hogwarts</a>
             </div>
         </div>
     </section>
@@ -173,10 +174,13 @@
             </div>
             <div class="col text-right">
                 <p>
-                    <a href="https://www.youtube.com/channel/UChPRO1CB_Hvd0TvKRU62iSQ" target="_blank"><i class="fab fa-youtube px-1"></i></a>
-                    <a href="https://www.facebook.com/wizardingworld" target="_blank"><i class="fab fa-facebook-square px-1"></i></a>
-                    <a href="https://www.instagram.com/wizardingworld/" target="_blank"><i class="fab fa-instagram px-1"></i></a>
-                    <a href="https://twitter.com/wizardingworld" target="_blank"><i class="fab fa-twitter px-1"></i></a>                    
+                    <a href="https://www.youtube.com/channel/UChPRO1CB_Hvd0TvKRU62iSQ" target="_blank"><i
+                            class="fab fa-youtube px-1"></i></a>
+                    <a href="https://www.facebook.com/wizardingworld" target="_blank"><i
+                            class="fab fa-facebook-square px-1"></i></a>
+                    <a href="https://www.instagram.com/wizardingworld/" target="_blank"><i
+                            class="fab fa-instagram px-1"></i></a>
+                    <a href="https://twitter.com/wizardingworld" target="_blank"><i class="fab fa-twitter px-1"></i></a>
                 </p>
             </div>
         </div>
@@ -189,6 +193,11 @@
     <script src="https://code.jquery.com/jquery-3.5.0.min.js"
         integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
     <script src="/script/script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
 </body>
 
 </html>
