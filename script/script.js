@@ -11,11 +11,12 @@
 
 
 
-    // when user search their favourite character
+   
     $(document).ready(function () {
+      $( ".h1" ).hide().fadeIn(3000);   
       $(".card").hide();
 
-
+       // when user search their favourite character
       $ ('#charSearch').click(function(e){
         e.preventDefault();
   

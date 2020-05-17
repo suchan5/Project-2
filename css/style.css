@@ -14,6 +14,8 @@ body {
 
 
 
+
+
 /* navbar */
 .overlay {
     height: 0%;
@@ -55,14 +57,15 @@ body {
     right: 45px;
     font-size: 60px;
 }
-  
-@media screen and (max-height: 450px) {
+ 
+
+@media screen and (max-width: 400px) {
     .overlay {overflow-y: auto;}
-    .overlay a {font-size: 20px}
+    .overlay a {font-size: 1.7rem;}
     .overlay .closebtn {
-    font-size: 40px;
-    top: 15px;
-    right: 35px;
+    font-size: 2.5rem;
+    top: 1rem;
+    right: 2rem;
     }
 }
 
@@ -70,18 +73,14 @@ body {
 
 
 
-
-
-
-
 /*  masthead section */
 .masthead {
-    font-family: 'AbrilFatface-Regular';
+    font-family: 'Source Sans Pro', sans-serif;   
 }
 
 .masthead .container-fluid {
-    height: 65vh;
-    background-image: url('/img/lkkkkk.jpg');
+    height: 75vh;
+    background-image: url('/img/bgimg.png');
     background-size: cover;
     background-repeat: no-repeat; 
     background-position: center; 
@@ -119,7 +118,6 @@ img {
 
 
 
-
 /* searching characters section*/
 .searchingContainer {
     display: flex;
@@ -129,20 +127,28 @@ img {
 }
 
 .searching {
-    font-family: 'AbrilFatface-Regular';
-    background-color: #fafafa;    
+    background-color: #fafafa;
+    font-family: 'Source Sans Pro', sans-serif;   
 }
 
 .searching .h2 {
     margin-top: 5rem;
     margin-bottom: 1.5rem;
+    font-family: 'AbrilFatface-Regular';  
 }
 
-.searching p.suggestion {
+.searching .suggestion {
     display: flex;
     justify-content: space-between;
     margin-top: 1.5rem;
     margin-bottom: 5rem;    
+}
+
+#textdeco {
+    font-family: 'AbrilFatface-Regular'; 
+    font-size: 1.1rem;
+    text-decoration: underline;
+    color: rgba(56, 70, 15, 0.733);
 }
 
 #charSection {
@@ -168,6 +174,7 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
+    font-family: 'AbrilFatface-Regular';  
 }
 
 .card-img img {
@@ -182,14 +189,20 @@ img {
         margin-top: 1.5rem;    
         font-size: 0.9rem;
     }
+
+    .searching .h2 {
+        margin-top: 5rem;
+        margin-bottom: 1.5rem;
+        font-family: 'AbrilFatface-Regular';
+        font-size: 1.9rem;
+    }
 }
 
 
 
 
+
 /*Dementor game section*/
-
-
 .game {
     height: 100vh;
     background-image: linear-gradient(to right, rgba(96, 96, 99, 0.52), rgba(31, 30, 30, 0.253)), url(/img/dementorImg.jpeg);
@@ -200,7 +213,8 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;     
+    justify-content: center;   
+    font-family: 'Source Sans Pro', sans-serif;  
 }
 
 .game .gamestory {
@@ -208,14 +222,19 @@ img {
     width: 50%;
 }
 
-.game h1, .game p {
+.game h1 {
+    color: white;
+    font-family: 'AbrilFatface-Regular';
+}
+
+.game p {
     color: white;
 }
 
 .game .button {
     background-color: rgba(187, 224, 55, 0.733);
     border: solid white 1px;
-    color: white;
+    color: #fafafa;
     padding: 15px 32px;
     display: inline-block;
     font-size: 16px;
@@ -224,7 +243,6 @@ img {
     border-radius: 4px;
     margin-top: 2rem;
 }
-
 
 .game .btnPosition {
     text-align: right;
@@ -245,7 +263,7 @@ img {
     
     .game p {
         color: white;
-        font-size: 0.8rem;        
+        font-size: 0.9rem;        
     }
     
     .game .gamestory {
@@ -264,12 +282,18 @@ img {
         cursor: pointer;
         border-radius: 4px;
     }
+
+    .game .btnPosition {
+        text-align: left;
+        width: 50%;
+    }
 }
 
 
 
 
 
+/* footer section */
 footer {
     background-color: #333;
     color: #fafafa;
@@ -278,4 +302,16 @@ footer {
 footer i{
     font-size: 1.5em;
     color: #fafafa;;
+}
+
+@media only screen and (max-width:450px){
+    footer i{
+        font-size: 1.2em;
+        color: #fafafa;;
+    }
+
+    footer .copyright {
+        font-size: 0.8rem;
+        text-align: right;
+    }
 }

@@ -161,6 +161,7 @@ h2 {
     color:white;
     cursor: pointer;
     border-radius: 4px;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 .homeBtn {
@@ -182,3 +183,6 @@ reset {
 }
 
 
+#dialogueText p {
+    font-family: 'Source Sans Pro', sans-serif;
+}

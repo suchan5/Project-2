@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/0b10d58be2.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="/css/style.css" type="text/css">
     <title>Pottermost</title>
@@ -72,7 +73,7 @@
                         <div class="col">
                             <input id="charName" type="text" class="form-control float-left" value=""
                                 placeholder="E.g. Harry Potter" style="width: 90%;">
-                            <button id="charSearch" type="submit" class="btn btn-warning" value="search"
+                            <button id="charSearch" type="submit" class="btn btn-dark" value="search"
                                 style="width:10%;"><i class="fas fa-search"></i></button>
                         </div>
                     </div>
@@ -81,12 +82,12 @@
 
                 <div class="row">
                     <div class="col">
-                        <p class="suggestion mx-auto">
-                            Suggestions:&emsp;
-                            <span>Hermione Granger <span class="fontPic">G</span></span>&ensp; 
-                            <span>Severus Snape <span class="fontPic">c</span></span>&ensp; 
-                            <span>Ron Weasley <span class="fontPic">R</span></span>
-                        </p>
+                        <div class="suggestion mx-auto">
+                            <span id="textdeco">Suggestions</span>:&emsp;
+                            <span data-aos="flip-left">Hermione Granger <span class="fontPic">G</span></span>&ensp; 
+                            <span data-aos="flip-left">Severus Snape <span class="fontPic">c</span></span>&ensp; 
+                            <span data-aos="flip-left">Ron Weasley <span class="fontPic">R</span></span>
+                        </div>
                     </div>
                 </div>
 
@@ -147,12 +148,13 @@
     <section class="game">
         <div class="container">
             <div class="gamestory mx-auto" data-aos="fade-right">
-                <h1>Dementors!</h1>
+                <h1 data-aos="fade-left">Dementors!</h1>
+                <br>
                 <p>
                     They suck the souls out of the victims, leaving them in a state worse than death. Dementors’ kisses
                     must be avoided at all costs.
                     These dark creatures of the Azkaban have broken into Hogwarts despite Headmaster Dumbledore’s stern
-                    refusal to let them in. Lets help to fight the Dementors off Hogwarts!
+                    refusal to let them in. Let's help to fight the Dementors off Hogwarts!
                 </p>
             </div>
             <div class="btnPosition mx-auto" data-aos="fade-left">
@@ -169,8 +171,7 @@
     <footer class="container-fluid py-3 ">
         <div class="row">
             <div class="col">
-                <div class="copyright">Copyright <i class="fas fa-copyright"></i> 2020 Pottermost. All Rights Reserved.
-                </div>
+                <div class="copyright">Copyright <i class="fas fa-copyright"></i> 2020 Pottermost. All Rights Reserved</div>
             </div>
             <div class="col text-right">
                 <p>
