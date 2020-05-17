@@ -12,16 +12,22 @@
 <body>
 
     <div class="stage">
-        <div id="dialogue">
-            <h1>HELP!</h1>
-            <p>Hogwarts is attacked by Dementors</p>
-            <p>Click on the flying Dementors to get rid of them!</p>
-            <p>
-                <input id="easyMode" class="btn inactive" type="button" value="Easy">
-                <input id="hardMode" class="btn inactive" type="button" value="Hard">
-                <i id="replay" class="fas fa-redo"></i>
-            </p>    
+        <div>
+            <p id="endmsg"></p>
         </div>
+        <div id="dialogue">
+            <div id="dialogueText">
+                <h2>HELP!</h2>
+                <p>Hogwarts is attacked by Dementors</p>
+                <p>Click on the flying Dementors to get rid of them!</p>
+                <p>
+                    <input id="easyMode" class="btn inactive" type="button" value="Easy">
+                    <input id="hardMode" class="btn inactive" type="button" value="Hard">
+                    <i id="replay" class="fas fa-redo"></i>
+                </p>
+            </div>
+        </div>
+
         <div class="stageEasy">
             <div class="dementor a"></div>
             <div class="dementor b"></div>
@@ -29,19 +35,14 @@
             <div class="dementor d"></div>
         </div>
         <div class="stageHard">
-            <div class="dementor a"></div>
-            <div class="dementor b"></div>
-            <div class="dementor c"></div>
-            <div class="dementor d"></div>
-            <div class="dementor e"></div>
-            <div class="dementor f"></div>
+            <div class="dementorHard a"></div>
+            <div class="dementorHard b"></div>
+            <div class="dementorHard c"></div>
+            <div class="dementorHard d"></div>
+            <div class="dementorHard e"></div>
+            <div class="dementorHard f"></div>
         </div>
     </div>
-
-
-
-
-
 
 
     <script src="https://code.jquery.com/jquery-3.5.0.min.js"

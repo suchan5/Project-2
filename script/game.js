@@ -41,7 +41,7 @@ $(function () {
     const easyMode = document.querySelector('#easyMode');
 
     function clickEasyModeHandler(e) {
-        $('.stageEasy').show();
+        $('.stageEasy').show().hide().fadeIn('slow');
     };
 
     easyMode.addEventListener('click', clickEasyModeHandler);
@@ -58,9 +58,9 @@ $(function () {
 
         ifClick.addEventListener('click', clickHandler);
     })();
-
-
 })();
+
+
 
 
 
@@ -74,7 +74,21 @@ $(function () {
 
         if (e.target.classList.contains('dementor')) {
             stageEasy.removeChild(e.target);
+            console.log("still have");
         };
+
+
+        const count = document.getElementsByClassName("dementor").length;
+        console.log(count);
+
+        if (count==0) {                         
+            $('#dialogueText').hide();      
+            $( "#endmsg" ).append(`<h1>You've saved Hogwarts !</h1>`).hide().fadeIn(3000);                 
+        };
+
+
+
+
     };
 
     stageEasy.addEventListener('click', EasyModePlay);
@@ -82,9 +96,13 @@ $(function () {
 
 
 
+
+
+
+
 // when user clicks Hard-mode button
 (function () {
-    const easyMode = document.querySelector('#hardMode');
+    const hardMode = document.querySelector('#hardMode');
 
     function clickHardModeHandler(e) {
         $('.stageHard').show();
@@ -118,9 +136,21 @@ $(function () {
     function hardModePlay(e) {
         console.log(e.target);
 
-        if (e.target.classList.contains('dementor')) {
+        if (e.target.classList.contains('dementorHard')) {
             stageHard.removeChild(e.target);
+            console.log("still have");
         };
+
+
+
+        const countHard = document.getElementsByClassName("dementorHard").length;
+        console.log(countHard);
+
+        if (countHard==0) {
+            $('#dialogueText').hide();      
+            $( "#endmsg" ).append(`<h1>You've saved Hogwarts !</h1>`).hide().fadeIn(3000);       
+      
+        }
     };
 
     stageHard.addEventListener('click', hardModePlay);
