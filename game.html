@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Dementor Game</title>
     <script src="https://kit.fontawesome.com/0b10d58be2.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/css/game.css" type="text/css">
@@ -13,43 +14,49 @@
 
     <div class="stage">
         <div>
-            <p id="endmsg"></p>
+            <P id="endmsg"></P>
         </div>
         <div id="dialogue">
             <div id="dialogueText">
                 <h2>HELP!</h2>
                 <p>Hogwarts is attacked by Dementors</p>
-                <p>Click on the flying Dementors to get rid of them!</p>
+                <P>Click on the flying Dementors to get rid of them!</P>
+            </div>
+            <div id="modeBtn">
                 <p>
                     <input id="easyMode" class="btn inactive" type="button" value="Easy">
                     <input id="hardMode" class="btn inactive" type="button" value="Hard">
+                </p>
+            </div>
+            <div>
+                <p>
+                    <a href="index.html"><i class="homeBtn fas fa-home"></i></a>
                     <i id="replay" class="fas fa-redo"></i>
                 </p>
             </div>
         </div>
+    </div>
 
-        <div class="stageEasy">
-            <div class="dementor a"></div>
-            <div class="dementor b"></div>
-            <div class="dementor c"></div>
-            <div class="dementor d"></div>
-        </div>
-        <div class="stageHard">
-            <div class="dementorHard a"></div>
-            <div class="dementorHard b"></div>
-            <div class="dementorHard c"></div>
-            <div class="dementorHard d"></div>
-            <div class="dementorHard e"></div>
-            <div class="dementorHard f"></div>
-        </div>
+    <div class="stageEasy">
+        <div class="dementor a"></div>
+        <div class="dementor b"></div>
+        <div class="dementor c"></div>
+        <div class="dementor d"></div>
+    </div>
+    <div class="stageHard">
+        <div class="dementorHard a"></div>
+        <div class="dementorHard b"></div>
+        <div class="dementorHard c"></div>
+        <div class="dementorHard d"></div>
+        <div class="dementorHard e"></div>
+        <div class="dementorHard f"></div>
+    </div>
     </div>
 
 
     <script src="https://code.jquery.com/jquery-3.5.0.min.js"
         integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
     <script src="/script/game.js"></script>
-
-
 </body>
 
 </html>

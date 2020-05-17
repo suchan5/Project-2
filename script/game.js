@@ -1,8 +1,8 @@
-// when page loaded
+// when page loaded 
 $(function () {
     $(document).ready(function () {
         console.log('ready!');
-        $('#dialogue').hide().show().hide().fadeIn(3000); 
+        $('#dialogue').hide().show().hide().fadeIn(3000);        
         $('.stageEasy').hide();
         $('.stageHard').hide();
     });
@@ -10,13 +10,16 @@ $(function () {
 
 
 
+
+
 // when user clicks button : active on click
-(function() {
+(function () {
     $('.btn').click(function () {
         $('.btn').removeClass('active').addClass('inactive');
         $(this).removeClass('inactive').addClass('active');
     });
 })();
+
 
 
 
@@ -40,11 +43,13 @@ $(function () {
 (function () {
     const easyMode = document.querySelector('#easyMode');
 
-    function clickEasyModeHandler(e) {
-        $('.stageEasy').show().hide().fadeIn('slow');
+    function clickEasyModeHandler(e) {        
+        $('#dialogueText').hide();
+        $('.stageEasy').show().hide().fadeIn('slow');        
     };
 
     easyMode.addEventListener('click', clickEasyModeHandler);
+
 
 
     // Hard-mode is disabled while user plays Easy-mode
@@ -64,7 +69,7 @@ $(function () {
 
 
 
-// when Easy-mode is playing
+// When Easy-mode is playing
 (function () {
 
     const stageEasy = document.querySelector('.stageEasy');
@@ -77,21 +82,16 @@ $(function () {
             console.log("still have");
         };
 
-
         const count = document.getElementsByClassName("dementor").length;
         console.log(count);
 
         if (count==0) {                         
-            $('#dialogueText').hide();      
+            $('#dialogueText, #modeBtn').hide();                 
             $( "#endmsg" ).append(`<h1>You've saved Hogwarts !</h1>`).hide().fadeIn(3000);                 
-        };
-
-
-
-
+        };      
     };
 
-    stageEasy.addEventListener('click', EasyModePlay);
+    stageEasy.addEventListener('click', EasyModePlay);    
 })();
 
 
@@ -104,10 +104,11 @@ $(function () {
 (function () {
     const hardMode = document.querySelector('#hardMode');
 
-    function clickHardModeHandler(e) {
+    function clickHardModeHandler(e) {  
+        $('#dialogueText').hide();     
         $('.stageHard').show();
     };
-    
+
     hardMode.addEventListener('click', clickHardModeHandler);
 
 
@@ -128,6 +129,7 @@ $(function () {
 
 
 
+
 // When Hard-mode is playing
 (function () {
 
@@ -141,17 +143,19 @@ $(function () {
             console.log("still have");
         };
 
-
-
         const countHard = document.getElementsByClassName("dementorHard").length;
         console.log(countHard);
 
         if (countHard==0) {
-            $('#dialogueText').hide();      
-            $( "#endmsg" ).append(`<h1>You've saved Hogwarts !</h1>`).hide().fadeIn(3000);       
-      
+            $('#dialogueText, #modeBtn').hide();     
+            $( "#endmsg" ).append(`<h1>You've saved Hogwarts !</h1>`).hide().fadeIn(3000);   
         }
     };
 
     stageHard.addEventListener('click', hardModePlay);
 })();
+
+
+
+
+

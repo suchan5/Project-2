@@ -5,7 +5,7 @@
 
 
 body {
-    margin: 0;
+    margin: 0;    
 }
 
 
@@ -17,19 +17,25 @@ body {
     background-image: url('/img/7.jpg');
     background-size: cover;
     background-repeat: no-repeat;  
-    background-position: center; 
-    font-family: 'AbrilFatface-Regular';
-    cursor: pointer;
+    background-position: center;     
+    font-family: 'AbrilFatface-Regular';  
 }
 
-p{
-    text-align: center;
+
+p {
+    text-align: center;       
 }
+
 
 h2 {
     text-align: center;
     color: red;
 }
+
+
+
+
+
 
 
 @keyframes moving {
@@ -40,9 +46,6 @@ h2 {
         transform: translateX(90vw);
     }
 }
-
-
-
 
 
 .dementor {
@@ -56,7 +59,8 @@ h2 {
     cursor: pointer;
 }
 
-.dementorhard {
+
+.dementorHard {
     position: absolute;
     width: 150px;
     height: 150px;
@@ -68,13 +72,13 @@ h2 {
 }
 
 
-
 .dementor.a {
     left: 2%;
     bottom: 35%;
     background-image: url('/img/dementor1.png');
     animation-duration: 2s;
 }
+
 
 .dementor.b {
     left: 3%;
@@ -83,12 +87,14 @@ h2 {
     animation-duration: 3s;
 }
 
+
 .dementor.c {
     left: 7%;
     bottom: 10%;
     background-image: url('/img/dementor3.png');
-    animation-duration:2s;
+    animation-duration: 2s;
 }
+
 
 .dementor.d {
     left: 5%;
@@ -97,12 +103,14 @@ h2 {
     animation-duration: 2.5s;
 }
 
+
 .dementorHard.a {
     left: 2%;
     bottom: 35%;
     background-image: url('/img/dementor1.png');
     animation-duration: 2s;
 }
+
 
 .dementorHard.b {
     left: 3%;
@@ -111,12 +119,14 @@ h2 {
     animation-duration: 3s;
 }
 
+
 .dementorHard.c {
     left: 7%;
     bottom: 10%;
     background-image: url('/img/dementor3.png');
-    animation-duration:2s;
+    animation-duration: 2s;
 }
+
 
 .dementorHard.d {
     left: 5%;
@@ -129,14 +139,15 @@ h2 {
     left: 4%;
     bottom: 25%;
     background-image: url('/img/dementor5.png');
-    animation-duration: 4s;
+    animation-duration: 4s;    
 }
+
 
 .dementorHard.f {
     left: 26%;
     bottom: 7%;
     background-image: url('/img/dementor6.png');
-    animation-duration: 3s;
+    animation-duration: 3.5s;
 }
 
 
@@ -145,19 +156,26 @@ h2 {
     cursor: pointer;
 }
 
+
 .btn {
-    color: white;
+    color:white;
     cursor: pointer;
     border-radius: 4px;
+}
+
+.homeBtn {
+    color: black;
 }
 
 .active {
     background: #666;
 }
 
+
 .inactive {
     background: silver;
 }
+
 
 reset {
     display: none;
