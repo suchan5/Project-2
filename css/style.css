@@ -264,3 +264,17 @@ img {
         border-radius: 4px;
     }
 }
+
+
+
+
+
+footer {
+    background-color: #333;
+    color: #fafafa;
+}
+
+footer i{
+    font-size: 1.5em;
+    color: #fafafa;;
+}
