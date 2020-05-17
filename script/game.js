@@ -2,7 +2,7 @@
 $(function () {
     $(document).ready(function () {
         console.log('ready!');
-
+        $('#dialogue').hide().show().hide().fadeIn(3000); 
         $('.stageEasy').hide();
         $('.stageHard').hide();
     });

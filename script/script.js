@@ -41,18 +41,6 @@
                 $( "#house" ).html("");
                 $( "#house" ).append( `${n.house}` );
 
-
-                if (n.house === 'Gryffindor') {
-                  $( ".card-title" ).append( '<img src="img/gryffindor.png">' );
-                } else if (n.house === 'Slytherin') {
-                  $( ".card-title" ).append( '<img src="img/slytherin.png">' );
-                } else if (n.house === 'Ravenclaw') {
-                  $( ".card-title" ).append( '<img src="img/ravenclaw.png">' );
-                } else if (n.house === 'Hufflepuff') {
-                  $( ".card-title" ).append( '<img src="img/hufflepuff.png" >' );    
-                } 
-
-
                 $( "#wood" ).html("");
                 $( "#wood" ).append( `${n.wand.wood}` );
 
@@ -67,20 +55,24 @@
 
                 $( "#dob" ).html("");
                 $( "#dob" ).append( `${n.dateOfBirth}` ); 
+
+
+
+                if (n.house === 'Gryffindor') {
+                  $( ".card-title" ).append( '<img src="img/gryffindor.png">' );
+                } else if (n.house === 'Slytherin') {
+                  $( ".card-title" ).append( '<img src="img/slytherin.png">' );
+                } else if (n.house === 'Ravenclaw') {
+                  $( ".card-title" ).append( '<img src="img/ravenclaw.png">' );
+                } else if (n.house === 'Hufflepuff') {
+                  $( ".card-title" ).append( '<img src="img/hufflepuff.png" >' );    
+                }
               }
                 
-            }
-              
-  
-  
-  
-          });
-  
+            }    
+          });  
       });
-
-
-
-    })
+    });
 
       
 

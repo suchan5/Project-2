@@ -37,7 +37,7 @@ h1 {
         transform: translateX(0);
     }
     to {
-        transform: translateX(80vw);
+        transform: translateX(90vw);
     }
 }
 
@@ -53,53 +53,61 @@ h1 {
     background-position: 50% 50%;
     background-size: contain;
     animation: moving infinite alternate;
+    cursor: pointer;
 }
 
 .dementor.a {
     left: 2%;
-    bottom: 5%;
+    bottom: 35%;
     background-image: url('/img/dementor1.png');
-    animation-duration: 5s;
+    animation-duration: 2s;
 }
 
 .dementor.b {
-    left: 2%;
-    bottom: 15%;
+    left: 3%;
+    bottom: 3%;
     background-image: url('/img/dementor2.png');
-    animation-duration: 1s;
+    animation-duration: 3s;
 }
 
 .dementor.c {
-    left: 2%;
-    bottom: 15%;
+    left: 7%;
+    bottom: 10%;
     background-image: url('/img/dementor3.png');
-    animation-duration:6s;
+    animation-duration:2s;
 }
 
 .dementor.d {
-    left: 6%;
-    bottom: 10%;
+    left: 5%;
+    bottom: 20%;
     background-image: url('/img/dementor4.png');
     animation-duration: 4s;
 }
 
 .dementor.e {
-    left: 10%;
-    bottom: 24%;
+    left: 4%;
+    bottom: 25%;
     background-image: url('/img/dementor5.png');
-    animation-duration: 3s;
+    animation-duration: 2.5s;
 }
 
 .dementor.f {
     left: 26%;
     bottom: 7%;
     background-image: url('/img/dementor6.png');
-    animation-duration: 1s;
+    animation-duration: 3s;
 }
 
 
 #replay {
     margin-left: 5px;
+    cursor: pointer;
+}
+
+.btn {
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
 }
 
 .active {
@@ -114,6 +122,4 @@ reset {
     display: none;
 }
 
-.btn {
-    color: white;
-}
+

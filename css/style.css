@@ -192,20 +192,29 @@ img {
 
 .game {
     height: 100vh;
-    background-image: url(/img/wallpaper.jpg);
+    background-image: linear-gradient(to right, rgba(96, 96, 99, 0.52), rgba(31, 30, 30, 0.253)), url(/img/dementorImg.jpeg);
     background-size: cover;
     background-repeat: no-repeat;  
-    background-position: center;   
+    background-position: center;  
+    background-attachment: fixed; 
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;     
 }
 
+.game .gamestory {
+    text-align: left;
+    width: 50%;
+}
+
+.game h1, .game p {
+    color: white;
+}
 
 .game .button {
-    border: solid black 1px;
-    background-color: lightgreen;
+    background-color: rgba(187, 224, 55, 0.733);
+    border: solid white 1px;
     color: white;
     padding: 15px 32px;
     display: inline-block;
@@ -214,4 +223,44 @@ img {
     cursor: pointer;
     border-radius: 4px;
     margin-top: 2rem;
+}
+
+
+.game .btnPosition {
+    text-align: right;
+}
+
+.game .button:hover {
+    background-color: white;
+    color: black;
+    text-decoration: none;
+}
+
+@media only screen and (max-width:450px){
+    .game h1 {
+        color: white;
+        font-size: 2rem;       
+    }
+    
+    .game p {
+        color: white;
+        font-size: 0.8rem;        
+    }
+    
+    .game .gamestory {
+        text-align: left;    
+        width: 50%;
+    }
+
+    .game .button {
+        background-color: rgba(187, 224, 55, 0.733);
+        border: solid white 1px;
+        color: white;
+        padding: 0.8rem 0.8rem; 
+        display: inline-block;
+        font-size: 0.99rem;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 4px;
+    }
 }
