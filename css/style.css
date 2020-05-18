@@ -80,7 +80,7 @@ body {
 
 .masthead .container-fluid {
     height: 75vh;
-    background-image: url('/img/bgimg.png');
+    background-image: url('/img/lkkkkk.jpg');
     background-size: cover;
     background-repeat: no-repeat; 
     background-position: center; 
@@ -203,8 +203,11 @@ img {
 
 /* House quiz section*/
 .house {
-    height: 60vh;
-    background-color: palegoldenrod;
+    height: 80vh;
+    background-image: url(/img/bgimg.png);
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-position: center; 
     font-family: 'Source Sans Pro', sans-serif;  
     display: flex;
     flex-direction: column;
@@ -212,8 +215,8 @@ img {
     justify-content: center;
 }
 
-.house .quizbox {
-    border: #333 solid 1px;
+.house .quizbox {    
+    border-radius: 4px;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -221,7 +224,7 @@ img {
     justify-content: center;
     padding-top: 1rem;
     padding-bottom: 1rem;
-    background-color: palegoldenrod;
+    background-color: rgba(238, 237, 227, 0.589);
 }
 
 .house p {
@@ -229,19 +232,10 @@ img {
     text-align: center;
 }
 
-
-
 @media only screen and (max-width:400px){
-    .house .quizbox {
-        border: #333 solid 1px;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+    .house .quizbox {        
         padding-top: 0.3rem;
-        padding-bottom: 0.3rem;
-        background-color: palegoldenrod;
+        padding-bottom: 0.3rem;        
     }    
 }
 
