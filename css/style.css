@@ -201,6 +201,35 @@ img {
 
 
 
+/* House quiz section*/
+.house {
+    height: 50vh;
+    background-color: palegoldenrod;
+    font-family: 'Source Sans Pro', sans-serif;  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.house .quizbox {
+    border: #333 solid 1px;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.house p {
+    border: #333 solid 1px;
+
+}
+
+
+
+
+
 
 /*Dementor game section*/
 .game {
