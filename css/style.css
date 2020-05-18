@@ -203,7 +203,7 @@ img {
 
 /* House quiz section*/
 .house {
-    height: 50vh;
+    height: 60vh;
     background-color: palegoldenrod;
     font-family: 'Source Sans Pro', sans-serif;  
     display: flex;
@@ -214,20 +214,36 @@ img {
 
 .house .quizbox {
     border: #333 solid 1px;
-    height: 30vh;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: palegoldenrod;
 }
 
 .house p {
     border: #333 solid 1px;
-
+    text-align: center;
 }
 
 
 
+@media only screen and (max-width:400px){
+    .house .quizbox {
+        border: #333 solid 1px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 0.3rem;
+        padding-bottom: 0.3rem;
+        background-color: palegoldenrod;
+    }    
+}
 
 
 

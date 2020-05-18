@@ -15,6 +15,7 @@
     $(document).ready(function () {
       $( ".h1" ).hide().fadeIn(3000);   
       $(".card").hide();
+      $("#answer").hide();
 
        // when user search their favourite character
       $ ('#charSearch').click(function(e){
@@ -481,28 +482,6 @@
           "image": "http://hp-api.herokuapp.com/images/slughorn.JPG"
       },
       {
-          "name": "Kingsley Shacklebolt",
-          "species": "human",
-          "gender": "male",
-          "house": "",
-          "dateOfBirth": "",
-          "yearOfBirth": "",
-          "ancestry": "pure-blood",
-          "eyeColour": "brown",
-          "hairColour": "brown",
-          "wand": {
-              "wood": "",
-              "core": "",
-              "length": ""
-          },
-          "patronus": "lynx",
-          "hogwartsStudent": false,
-          "hogwartsStaff": false,
-          "actor": "George Harris",
-          "alive": true,
-          "image": "http://hp-api.herokuapp.com/images/kingsley.jpg"
-      },
-      {
           "name": "Dolores Umbridge",
           "species": "human",
           "gender": "female",
@@ -589,50 +568,6 @@
           "actor": "Josh Herdman",
           "alive": true,
           "image": "http://hp-api.herokuapp.com/images/goyle.jpg"
-      },
-      {
-          "name": "Mrs Norris",
-          "species": "cat",
-          "gender": "female",
-          "house": "",
-          "dateOfBirth": "",
-          "yearOfBirth": "",
-          "ancestry": "",
-          "eyeColour": "yellow",
-          "hairColour": "brown",
-          "wand": {
-              "wood": "",
-              "core": "",
-              "length": ""
-          },
-          "patronus": "",
-          "hogwartsStudent": false,
-          "hogwartsStaff": true,
-          "actor": "Maxime, Alanis and Tommy the cats",
-          "alive": true,
-          "image": "http://hp-api.herokuapp.com/images/norris.JPG"
-      },
-      {
-          "name": "Argus Filch",
-          "species": "human",
-          "gender": "male",
-          "house": "",
-          "dateOfBirth": "",
-          "yearOfBirth": "",
-          "ancestry": "squib",
-          "eyeColour": "",
-          "hairColour": "grey",
-          "wand": {
-              "wood": "",
-              "core": "",
-              "length": ""
-          },
-          "patronus": "",
-          "hogwartsStudent": false,
-          "hogwartsStaff": true,
-          "actor": "David Bradley",
-          "alive": true,
-          "image": "http://hp-api.herokuapp.com/images/filch.jpg"
       }
   ]
 
@@ -644,8 +579,31 @@
 
 
   
-  function randomFunction() {            
-    $('#house_btn').hide();
-    $('#random_div').append(`<img src="${item.image}"/> <br>${item.name} `);
+  function randomFunction() {    
+    $('.house h2').css('color','white');        
+    $('#house_btn, .house p, .house h6').hide();
+    $('#random_div').append(`<img src="${item.image}"/> <br><p>${item.name}</p> `);
+    $("#answer").show(); 
   };
+  
+
+  $("#answer").submit(function (e) {
+      e.preventDefault();
+
+      let houseInput = $("#houseName").val();
+
+      if (houseInput.length === 0) {
+        $("#result").html("Please enter the house name").hide().show().hide().fadeIn('slow');
+        $("#result").css("color", "purple")
+      } else if (houseInput.toLowerCase() === (item.house).toLowerCase()) {
+        $("#random_div").hide().show().hide().fadeIn('3000');
+        $("#result").html("CORRECT!").hide().show().hide().fadeIn('slow');
+        $("#result").css("color", "blue")
+        $('#answer').hide();
+      } else {
+        $("#result").html("WRONG!").hide().show().hide().fadeIn('slow');
+        $("#result").css("color", "red")
+      };
+  });
+
   
