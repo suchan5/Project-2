@@ -8,6 +8,11 @@
     src: url('/fonts/HarryPotterAndTheDingbats-LKKg.ttf') format('truetype'); 
 }
 
+@font-face {       
+    font-family: 'LUMOS.TTF';
+    src: url('/fonts/LUMOS.TTF') format('truetype'); 
+}
+
 body {
     margin: 0;
 }
@@ -75,12 +80,12 @@ body {
 
 /*  masthead section */
 .masthead {
-    font-family: 'Source Sans Pro', sans-serif;   
+    font-family: 'AbrilFatface-Regular';
 }
 
 .masthead .container-fluid {
     height: 75vh;
-    background-image: url('/img/lkkkkk.jpg');
+    background-image: linear-gradient(to right, rgba(96, 96, 99, 0.411), rgba(153, 149, 149, 0.329)),  url('/img/11.png');
     background-size: cover;
     background-repeat: no-repeat; 
     background-position: center; 
@@ -134,7 +139,7 @@ img {
 .searching .h2 {
     margin-top: 5rem;
     margin-bottom: 1.5rem;
-    font-family: 'AbrilFatface-Regular';  
+    font-family: 'AbrilFatface-Regular';
 }
 
 .searching .suggestion {
@@ -145,7 +150,7 @@ img {
 }
 
 #textdeco {
-    font-family: 'AbrilFatface-Regular'; 
+    font-family: 'Sedgwick Ave', cursive;
     font-size: 1.1rem;
     text-decoration: underline;
     color: rgba(56, 70, 15, 0.733);
@@ -174,7 +179,7 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: 'AbrilFatface-Regular';  
+    font-family: 'AbrilFatface-Regular';
 }
 
 .card-img img {
@@ -232,6 +237,10 @@ img {
     text-align: center;
 }
 
+
+.house h2 {
+    font-family: 'AbrilFatface-Regular';
+}
 @media only screen and (max-width:400px){
     .house .quizbox {        
         padding-top: 0.3rem;

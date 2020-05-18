@@ -11,6 +11,7 @@
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/0b10d58be2.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Engagement&family=Fondamento&family=Kaushan+Script&family=Sedgwick+Ave&family=Shadows+Into+Light&family=Tangerine:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="/css/style.css" type="text/css">
     <title>Pottermost</title>
@@ -20,7 +21,7 @@
 
 
     <!--Header starts-->
-    <section class="masthead">
+    <section id="masthead" class="masthead">
         <div class="container-fluid">
             <div class="item">
                 <img src="img/logo1.png" class="img-fluid logo" alt="harryPotterLogo">
@@ -34,9 +35,9 @@
                 <div id="myNav" class="overlay">
                     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                     <div class="overlay-content">
-                        <a href="#">Search characters</a>
-                        <a href="#">Play game</a>
-                        <a href="#">Gallery</a>
+                        <a href="#characterSearch">Search Characters</a>
+                        <a href="#quizHouse">House Quiz</a>
+                        <a href="#gameDementor">Dementor Game</a>
                         <a href="#">Events</a><br><br>
                         <iframe src="https://open.spotify.com/embed/album/6zeHM5CV0CjcS0K8ouWE4N" width="300"
                             height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
@@ -58,7 +59,7 @@
 
     <!--searching characters starts-->
     <div class="searchingContainer">
-        <section class="searching">
+        <section id="characterSearch" class="searching">
             <div class="container-fluid">
 
                 <div class="row">
@@ -144,11 +145,10 @@
 
 
 
-    <!--House game starts-->
-
-    <section class="house">
+    <!--House quiz starts-->
+    <section id="quizHouse" class="house">
         <div class="container">
-            <class class="quizbox mx-auto">
+            <class class="quizbox mx-auto" data-aos="flip-right">
                 <h2 data-aos="fade-down">Guess the house </h2>
                 <h6 class="text-center" data-aos="fade-up">Click on the start button to guess the character's house !</h6>
                 <div id="result"></div><br>
@@ -163,7 +163,7 @@
             </class>
         </div>
     </section>
-    <!--House game ends-->
+    <!--House quiz ends-->
 
 
 
@@ -172,7 +172,7 @@
 
 
     <!--Dementor game starts-->
-    <section class="game">
+    <section id="gameDementor" class="game">
         <div class="container">
             <div class="gamestory mx-auto" data-aos="fade-right">
                 <h1 data-aos="fade-left">Dementors!</h1>
