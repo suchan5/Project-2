@@ -246,12 +246,19 @@ img {
     color: green;
 }
 
+#replay {
+    cursor: pointer;
+    color:  #250d3b
+}
+
 @media only screen and (max-width:400px){
     .house .quizbox {        
         padding-top: 0.3rem;
         padding-bottom: 0.3rem;        
     }    
 }
+
+
 
 
 

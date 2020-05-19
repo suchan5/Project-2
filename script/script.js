@@ -11,12 +11,14 @@
 
 
 
-   
+    // when document loaded
     $(document).ready(function () {
       $( ".h1" ).hide().fadeIn(3000);   
       $(".card").hide();
       $("#answer").hide();
       $("#hint").hide();
+      $("#replay").hide();
+
 
        // when user search their favourite character
       $ ('#charSearch').click(function(e){
@@ -60,7 +62,7 @@
                 $( "#dob" ).append( `${n.dateOfBirth}` ); 
 
 
-
+                // Image of the matched house will be shown
                 if (n.house === 'Gryffindor') {
                   $( ".card-title" ).append( '&emsp;<img src="img/gryffindor.png" style="width:80px; height:80px;"/>' );
                 } else if (n.house === 'Slytherin') {
@@ -84,7 +86,7 @@
 
 
 
-
+    // Array for the House Quiz : data from Harry Potter API
     const list = [
       {
           "name": "Harry Potter",
@@ -572,6 +574,7 @@
       }
   ]
 
+  // To retrieve ramdom elemnts(character's name and the picture) from the above array
   const keys = Object.keys(list);
   const randomIndex = keys[Math.floor(Math.random() * keys.length)];
   const item = list[randomIndex];
@@ -579,16 +582,18 @@
 
 
 
-  
+  // when user clicks the button for the House Quiz
   function randomFunction() {    
     $('.house h2').css('color','white');        
     $('#house_btn, .house p, .house h6').hide();
     $('#random_div').append(`<img src="${item.image}" style="width:250px; height:250px;"/> <br><p>${item.name}</p> `);
     $("#answer").show(); 
-    $("#hint").show();
+    $("#hint").fadeIn(3000); 
   };
   
 
+
+  // when user submit the answer for the House Quiz
   $("#answer").submit(function (e) {
       e.preventDefault();
 
@@ -604,10 +609,22 @@
         $("#result").html("CORRECT!").hide().show().hide().fadeIn('slow');
         $("#result").css("color", "blue")
         $('#answer').hide();
+        $("#replay").show(); 
       } else {
         $("#result").html("WRONG!").hide().show().hide().fadeIn('slow');
         $("#result").css("color", "red")
       };
   });
 
+
   
+  // when user clicks Replay button : page reloaded
+ (function () {
+    const replay = document.querySelector('#replay');
+
+    function clickEasyModeHandler(e) {
+        document.location.reload();
+    };
+
+    replay.addEventListener('click', clickEasyModeHandler);
+ })();
