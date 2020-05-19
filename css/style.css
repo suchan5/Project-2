@@ -353,6 +353,27 @@ img {
 
 
 
+/* Quidditch section*/
+.quidditch {         
+    background-image: url(/img/quidditch.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;  
+    background-position: center;      
+}
+
+
+.quidditch h2 {
+    font-family: 'AbrilFatface-Regular';
+    color: #fafafa;
+}
+
+.quidditch p, .quidditch h5{
+    font-family: 'Source Sans Pro', sans-serif;   
+    color: #fafafa;
+}
+
+
+
 /* footer section */
 footer {
     background-color: #333;

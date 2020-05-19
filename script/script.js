@@ -617,7 +617,7 @@
   });
 
 
-  
+
   // when user clicks Replay button : page reloaded
  (function () {
     const replay = document.querySelector('#replay');
@@ -627,4 +627,37 @@
     };
 
     replay.addEventListener('click', clickEasyModeHandler);
- })();
+ })(); 
+
+
+ 
+
+
+
+
+ // When user clicks the toggle button
+ $(function () {
+    $(document).ready(function(){
+
+        $(".toggleContent").hide();
+
+        $("#toggleBtn1").click(function(){
+            $("#toggleContent1").toggle();
+          });
+
+        $("#toggleBtn2").click(function(){
+            $("#toggleContent2").toggle();
+          });
+
+        $("#toggleBtn3").click(function(){
+          $("#toggleContent3").toggle();
+        });
+
+        $("#toggleBtn4").click(function(){
+            $("#toggleContent4").toggle();
+          });
+      });
+})();
+ 
+
+
