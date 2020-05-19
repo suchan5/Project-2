@@ -241,6 +241,11 @@ img {
 .house h2 {
     font-family: 'AbrilFatface-Regular';
 }
+
+#hint {
+    color: green;
+}
+
 @media only screen and (max-width:400px){
     .house .quizbox {        
         padding-top: 0.3rem;

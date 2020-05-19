@@ -16,6 +16,7 @@
       $( ".h1" ).hide().fadeIn(3000);   
       $(".card").hide();
       $("#answer").hide();
+      $("#hint").hide();
 
        // when user search their favourite character
       $ ('#charSearch').click(function(e){
@@ -582,13 +583,16 @@
   function randomFunction() {    
     $('.house h2').css('color','white');        
     $('#house_btn, .house p, .house h6').hide();
-    $('#random_div').append(`<img src="${item.image}"/> <br><p>${item.name}</p> `);
+    $('#random_div').append(`<img src="${item.image}" style="width:250px; height:250px;"/> <br><p>${item.name}</p> `);
     $("#answer").show(); 
+    $("#hint").show();
   };
   
 
   $("#answer").submit(function (e) {
       e.preventDefault();
+
+      $("#hint").hide();
 
       let houseInput = $("#houseName").val();
 

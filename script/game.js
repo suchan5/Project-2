@@ -87,7 +87,7 @@ $(function () {
 
         if (count==0) {                         
             $('#dialogueText, #modeBtn').hide();                 
-            $( "#endmsg" ).append(`<h1>You've saved Hogwarts !</h1>`).hide().fadeIn(3000);                 
+            $( "#endmsg" ).append(`<h1>You saved Hogwarts !</h1>`).hide().fadeIn(3000);                 
         };      
     };
 
@@ -148,7 +148,7 @@ $(function () {
 
         if (countHard==0) {
             $('#dialogueText, #modeBtn').hide();     
-            $( "#endmsg" ).append(`<h1>You've saved Hogwarts !</h1>`).hide().fadeIn(3000);   
+            $( "#endmsg" ).append(`<h1>You saved Hogwarts !</h1>`).hide().fadeIn(3000);   
         }
     };
 
