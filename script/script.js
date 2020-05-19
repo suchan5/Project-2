@@ -636,28 +636,27 @@
 
 
  // Ask About Quidditch : When user clicks the toggle button
- $(function () {
-    $(document).ready(function(){
+ 
+ $(document).ready(function(){
+    $(".toggleContent").hide();
 
-        $(".toggleContent").hide();
+    $("#toggleBtn1").click(function(){
+        $("#toggleContent1").toggle();
+    });
 
-        $("#toggleBtn1").click(function(){
-            $("#toggleContent1").toggle();
-          });
+    $("#toggleBtn2").click(function(){
+        $("#toggleContent2").toggle();
+    });
 
-        $("#toggleBtn2").click(function(){
-            $("#toggleContent2").toggle();
-          });
+    $("#toggleBtn3").click(function(){
+        $("#toggleContent3").toggle();
+    });
 
-        $("#toggleBtn3").click(function(){
-          $("#toggleContent3").toggle();
-        });
+    $("#toggleBtn4").click(function(){
+        $("#toggleContent4").toggle();
+    });
+ });
 
-        $("#toggleBtn4").click(function(){
-            $("#toggleContent4").toggle();
-          });
-      });
-})();
  
 
 

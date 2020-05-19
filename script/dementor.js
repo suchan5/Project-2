@@ -6,7 +6,7 @@ $(function () {
         $('.stageEasy').hide();
         $('.stageHard').hide();
     });
-})();
+});
 
 
 
