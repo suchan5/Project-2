@@ -574,7 +574,7 @@
       }
   ]
 
-  // To retrieve ramdom elemnts(character's name and the picture) from the above array
+  // House Quiz : To retrieve ramdom elemnts(character's name and the picture) from the above array
   const keys = Object.keys(list);
   const randomIndex = keys[Math.floor(Math.random() * keys.length)];
   const item = list[randomIndex];
@@ -582,7 +582,7 @@
 
 
 
-  // when user clicks the button for the House Quiz
+  // House Quiz : when user clicks the start button for the House Quiz
   function randomFunction() {    
     $('.house h2').css('color','white');        
     $('#house_btn, .house p, .house h6').hide();
@@ -593,7 +593,7 @@
   
 
 
-  // when user submit the answer for the House Quiz
+  // House Quiz : when user submit the answer for the House Quiz
   $("#answer").submit(function (e) {
       e.preventDefault();
 
@@ -618,7 +618,7 @@
 
 
 
-  // when user clicks Replay button : page reloaded
+  // House Quiz : when user clicks Replay button : page reloaded
  (function () {
     const replay = document.querySelector('#replay');
 
@@ -635,7 +635,7 @@
 
 
 
- // When user clicks the toggle button
+ // Ask About Quidditch : When user clicks the toggle button
  $(function () {
     $(document).ready(function(){
 

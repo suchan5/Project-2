@@ -8,11 +8,6 @@
     src: url('/fonts/HarryPotterAndTheDingbats-LKKg.ttf') format('truetype'); 
 }
 
-@font-face {       
-    font-family: 'LUMOS.TTF';
-    src: url('/fonts/LUMOS.TTF') format('truetype'); 
-}
-
 body {
     margin: 0;
 }
@@ -229,6 +224,7 @@ img {
     justify-content: center;
     padding-top: 1rem;
     padding-bottom: 1rem;
+    margin-top: 5rem;
     background-color: rgba(238, 237, 227, 0.589);
 }
 
@@ -354,23 +350,52 @@ img {
 
 
 /* Quidditch section*/
-.quidditch {         
+.quidditch {
     background-image: url(/img/quidditch.jpg);
     background-size: cover;
-    background-repeat: no-repeat;  
-    background-position: center;      
+    background-repeat: no-repeat; 
+    background-position: center; 
+    font-family: 'Source Sans Pro', sans-serif;      
 }
 
+.quidditch .quidditchBox {    
+    border-radius: 4px;    
+    background-color: rgba(238, 237, 227, 0.589);
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-bottom: 5rem;
+    padding-top: 5rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
 
 .quidditch h2 {
     font-family: 'AbrilFatface-Regular';
-    color: #fafafa;
+    margin-bottom: 5rem;
 }
 
-.quidditch p, .quidditch h5{
-    font-family: 'Source Sans Pro', sans-serif;   
-    color: #fafafa;
+.quidditch p {
+    color: #333;
 }
+
+@media only screen and (max-width:600px){
+    .quidditch .row {
+        text-align: center;
+    }
+
+    .quidditch h5 {
+        font-size: 1.15rem;
+    }
+
+    .quidditch p {
+        font-size: 1rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        color: #333;
+    }
+}
+
+
 
 
 
