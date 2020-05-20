@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/0b10d58be2.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Sedgwick+Ave&family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sedgwick+Ave&family=Source+Sans+Pro:wght@600&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <title>Pottermost</title>
@@ -32,7 +33,7 @@
 
                 <!--navbar starts-->
                 <div id="myNav" class="overlay">
-                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <a id="closeNavbar" href="javascript:void(0)" class="closebtn">&times;</a>
                     <div class="overlay-content">
                         <a href="#masthead">Home</a>
                         <a href="#characterSearch">Search Characters</a>
@@ -40,10 +41,10 @@
                         <a href="#gameDementor">Dementor Game</a>
                         <a href="#aboutQuidditch">Ask About Quidditch</a><br><br>
                         <iframe src="https://open.spotify.com/embed/album/6zeHM5CV0CjcS0K8ouWE4N" width="300"
-                            height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                            height="80" allow="encrypted-media"></iframe>
                     </div>
                 </div>
-                <p class="text-right"><span style="font-size:30px;cursor:pointer" onmouseover="openNav()">&#9776;</span>
+                <p class="text-right"><span id="openNavbar" style="font-size:30px;cursor:pointer">&#9776;</span>
                 </p>
                 <!--navbar ends-->
 
@@ -96,13 +97,13 @@
                 <div id="charSection" class="card mb-3 mx-auto" style="max-width: 549.07px;">
                     <div class="row no-gutters align-items-center">
                         <div class="col-md-4">
-                            <div class="card-img img-thumbnail img-fluid" alt="Character's picture"></div>
+                            <div class="card-img img-thumbnail img-fluid"></div>
                         </div>
                         <div class="col-md-8">
                             <div class="card-body">
-                                <h5 class="card-title"></h5>
+                                <p class="h5 card-title"></p>
                                 <hr>
-                                <p class="card-text">
+                                <div class="card-text">
                                     <div class="container">
                                         <div class="row">
                                             <div class="col text-muted"><strong>Date of Birth</strong></div>
@@ -131,7 +132,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                </p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -148,15 +149,14 @@
     <!--House quiz starts-->
     <section id="quizHouse" class="house">
         <div class="container">
-            <class class="quizbox mx-auto" data-aos="flip-right">
+            <div class="quizbox mx-auto" data-aos="flip-right">
                 <h2 data-aos="fade-down">Guess the house </h2>
                 <h6 class="text-center" data-aos="fade-up">Click on the start button to guess the character's house !
                 </h6>
                 <div id="hint">Need a hint? Search above!</div>
                 <div id="result"></div>
                 <br>
-                <button id="house_btn" type="submit" class="btn btn-dark" value="Start"
-                    onclick="randomFunction()">Start</button>
+                <button id="house_btn" type="submit" class="btn btn-dark" value="Start">Start</button>
                 <div id="random_div"></div>
                 <i id="replay" class="fas fa-redo"> Replay</i>
                 <form id="answer">
@@ -164,7 +164,7 @@
                         placeholder="E.g. Gryffindor" style="width:70%">
                     <button id="houseSearch" type="submit" class="btn btn-dark" value="search">Submit</button>
                 </form>
-            </class>
+            </div>
         </div>
     </section>
     <!--House quiz ends-->

@@ -18,7 +18,7 @@ body {
 
 /* navbar */
 .overlay {
-    height: 0%;
+    height: 0;
     width: 100%;
     position: fixed;
     z-index: 1;
@@ -42,7 +42,7 @@ body {
     padding: 8px;
     text-decoration: none;
     font-size: 36px;
-    color: #eeb224;
+    color: #818181;
     display: block;
     transition: 0.3s;
 }
@@ -61,7 +61,7 @@ body {
 
 @media screen and (max-width: 400px) {
     .overlay {overflow-y: auto;}
-    .overlay a {font-size: 1.7rem; color: #eeb224;}
+    .overlay a {font-size: 1.7rem;}
     .overlay .closebtn {
     font-size: 2.5rem;
     top: 1rem;

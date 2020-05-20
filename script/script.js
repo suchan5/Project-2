@@ -1,11 +1,26 @@
     // when user clicks navbar
-    function openNav() {
-        document.getElementById("myNav").style.height = "100%";
-      };
-      
-      function closeNav() {
-        document.getElementById("myNav").style.height = "0%";
-      };
+    (function () {
+        const openNavbar = document.querySelector('#openNavbar');
+    
+        function openNav() {
+            document.getElementById("myNav").style.height = "100%";
+        }
+    
+        openNavbar.addEventListener ('mouseover', openNav);
+    
+    
+    
+    
+    
+    
+        const closeNavbar = document.querySelector('#closeNavbar');
+    
+        function closeNav() {
+            document.getElementById("myNav").style.height = "0%";
+        }
+    
+        closeNavbar.addEventListener ('click', closeNav);
+    })();
 
 
 
@@ -38,7 +53,7 @@
             for (let n of msg) {
               if (userInput.toLowerCase() === (n.name).toLowerCase ()) {
                 $( ".card-title" ).html("");
-                $( ".card-title" ).append( `<strong>${n.name}</strong>` )
+                $( ".card-title" ).append( `<strong>${n.name}</strong>` );
                 
                 $( ".card-img" ).html("");
                 $( ".card-img" ).append( `<img src="${n.image}"/>` );
@@ -572,7 +587,7 @@
           "alive": true,
           "image": "http://hp-api.herokuapp.com/images/goyle.jpg"
       }
-  ]
+  ];
 
   // House Quiz : To retrieve ramdom elemnts(character's name and the picture) from the above array
   const keys = Object.keys(list);
@@ -583,14 +598,22 @@
 
 
   // House Quiz : when user clicks the start button for the House Quiz
-  function randomFunction() {    
-    $('.house h2').css('color','white');        
-    $('#house_btn, .house p, .house h6').hide();
-    $('#random_div').append(`<img src="${item.image}" style="width:250px; height:250px;"/> <br><p>${item.name}</p> `);
-    $("#answer").show(); 
-    $("#hint").fadeIn(3000); 
-  };
-  
+  (function () {
+    const houseBtn = document.querySelector('#house_btn');
+
+    function randomFunction() {  
+        $('.house h2').css('color','white');        
+        $('#house_btn, .house p, .house h6').hide();
+        $('#random_div').append(`<img src="${item.image}" style="width:250px; height:250px;"/> <br><p>${item.name}</p> `);
+        $("#answer").show(); 
+        $("#hint").fadeIn('slow');
+    }
+
+    houseBtn.addEventListener('click', randomFunction);
+  })();
+
+
+
 
 
   // House Quiz : when user submit the answer for the House Quiz
@@ -603,17 +626,17 @@
 
       if (houseInput.length === 0) {
         $("#result").html("Please enter the house name").hide().show().hide().fadeIn('slow');
-        $("#result").css("color", "purple")
+        $("#result").css("color", "purple");
       } else if (houseInput.toLowerCase() === (item.house).toLowerCase()) {
         $("#random_div").hide().show().hide().fadeIn('3000');
         $("#result").html("CORRECT!").hide().show().hide().fadeIn('slow');
-        $("#result").css("color", "blue")
+        $("#result").css("color", "blue");
         $('#answer').hide();
         $("#replay").show(); 
       } else {
         $("#result").html("WRONG!").hide().show().hide().fadeIn('slow');
-        $("#result").css("color", "red")
-      };
+        $("#result").css("color", "red");
+      }
   });
 
 
@@ -622,9 +645,9 @@
  (function () {
     const replay = document.querySelector('#replay');
 
-    function clickEasyModeHandler(e) {
+    function clickEasyModeHandler() {
         document.location.reload();
-    };
+    }
 
     replay.addEventListener('click', clickEasyModeHandler);
  })(); 

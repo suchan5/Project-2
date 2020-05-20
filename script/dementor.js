@@ -28,9 +28,9 @@ $(function () {
 (function () {
     const replay = document.querySelector('#replay');
 
-    function clickEasyModeHandler(e) {
+    function clickEasyModeHandler() {
         document.location.reload();
-    };
+    }
 
     replay.addEventListener('click', clickEasyModeHandler);
 })();
@@ -43,10 +43,10 @@ $(function () {
 (function () {
     const easyMode = document.querySelector('#easyMode');
 
-    function clickEasyModeHandler(e) {        
+    function clickEasyModeHandler() {        
         $('#dialogueText').hide();
         $('.stageEasy').show().hide().fadeIn('slow');        
-    };
+    }
 
     easyMode.addEventListener('click', clickEasyModeHandler);
 
@@ -56,10 +56,10 @@ $(function () {
     (function () {
         const ifClick = document.querySelector('#easyMode');
 
-        function clickHandler(e) {
+        function clickHandler() {
             const disabled = document.querySelector('#hardMode');
             disabled.disabled = true;
-        };
+        }
 
         ifClick.addEventListener('click', clickHandler);
     })();
@@ -80,16 +80,16 @@ $(function () {
         if (e.target.classList.contains('dementor')) {
             stageEasy.removeChild(e.target);
             console.log("still have");
-        };
+        }
 
         const count = document.getElementsByClassName("dementor").length;
         console.log(count);
 
-        if (count==0) {                         
+        if (count===0) {                         
             $('#dialogueText, #modeBtn').hide();                 
             $( "#endmsg" ).append(`<h1>You saved Hogwarts !</h1>`).hide().fadeIn(3000);                 
-        };      
-    };
+        }      
+    }
 
     stageEasy.addEventListener('click', EasyModePlay);    
 })();
@@ -104,10 +104,10 @@ $(function () {
 (function () {
     const hardMode = document.querySelector('#hardMode');
 
-    function clickHardModeHandler(e) {  
+    function clickHardModeHandler() {  
         $('#dialogueText').hide();     
         $('.stageHard').show();
-    };
+    }
 
     hardMode.addEventListener('click', clickHardModeHandler);
 
@@ -117,10 +117,10 @@ $(function () {
     (function () {
         const ifClick = document.querySelector('#hardMode');
 
-        function clickHandler(e) {
+        function clickHandler() {
             const disabled = document.querySelector('#easyMode');
             disabled.disabled = true;
-        };
+        }
 
         ifClick.addEventListener('click', clickHandler);
     })();
@@ -141,16 +141,16 @@ $(function () {
         if (e.target.classList.contains('dementorHard')) {
             stageHard.removeChild(e.target);
             console.log("still have");
-        };
+        }
 
         const countHard = document.getElementsByClassName("dementorHard").length;
         console.log(countHard);
 
-        if (countHard==0) {
+        if (countHard===0) {
             $('#dialogueText, #modeBtn').hide();     
             $( "#endmsg" ).append(`<h1>You saved Hogwarts !</h1>`).hide().fadeIn(3000);   
         }
-    };
+    }
 
     stageHard.addEventListener('click', hardModePlay);
 })();
