@@ -42,13 +42,13 @@ body {
     padding: 8px;
     text-decoration: none;
     font-size: 36px;
-    color: #818181;
+    color: #eeb224;
     display: block;
     transition: 0.3s;
 }
   
 .overlay a:hover, .overlay a:focus {
-    color: #f1f1f1;
+    color: #f1f1f1;    
 }
   
 .overlay .closebtn {
@@ -61,7 +61,7 @@ body {
 
 @media screen and (max-width: 400px) {
     .overlay {overflow-y: auto;}
-    .overlay a {font-size: 1.7rem;}
+    .overlay a {font-size: 1.7rem; color: #eeb224;}
     .overlay .closebtn {
     font-size: 2.5rem;
     top: 1rem;
@@ -75,7 +75,7 @@ body {
 
 /*  masthead section */
 .masthead {
-    font-family: 'AbrilFatface-Regular';
+    font-family: 'AbrilFatface-Regular', Arial, Helvetica, sans-serif;
 }
 
 .masthead .container-fluid {
@@ -134,7 +134,7 @@ img {
 .searching .h2 {
     margin-top: 5rem;
     margin-bottom: 1.5rem;
-    font-family: 'AbrilFatface-Regular';
+    font-family: 'AbrilFatface-Regular', Arial, Helvetica, sans-serif;
 }
 
 .searching .suggestion {
@@ -174,7 +174,7 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: 'AbrilFatface-Regular';
+    font-family: 'AbrilFatface-Regular', Arial, Helvetica, sans-serif;
 }
 
 .card-img img {
@@ -193,7 +193,7 @@ img {
     .searching .h2 {
         margin-top: 5rem;
         margin-bottom: 1.5rem;
-        font-family: 'AbrilFatface-Regular';
+        font-family: 'AbrilFatface-Regular', Arial, Helvetica, sans-serif;
         font-size: 1.9rem;
     }
 }
@@ -234,7 +234,7 @@ img {
 
 
 .house h2 {
-    font-family: 'AbrilFatface-Regular';
+    font-family: 'AbrilFatface-Regular', Arial, Helvetica, sans-serif;
 }
 
 #hint {
@@ -279,7 +279,7 @@ img {
 
 .game h1 {
     color: white;
-    font-family: 'AbrilFatface-Regular';
+    font-family: 'AbrilFatface-Regular', Arial, Helvetica, sans-serif;
 }
 
 .game p {
@@ -369,7 +369,7 @@ img {
 }
 
 .quidditch h2 {
-    font-family: 'AbrilFatface-Regular';
+    font-family: 'AbrilFatface-Regular', Arial, Helvetica, sans-serif;
     margin-bottom: 5rem;
 }
 
