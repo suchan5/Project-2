@@ -94,13 +94,13 @@
                 }
                 break;
               } else if (userInput.length === 0) {
-                $("#errorSection").html("")
+                $("#errorSection").html("");
                 $("#errorSection").html("Please enter the character's name").show();
                 $("#charSection").hide();
               } else {
                 console.log("Not found.."); 
                 
-                $("#errorSection").html("")
+                $("#errorSection").html("");
                 $("#errorSection").html("Not Found. Please try again!").show();
                 $("#charSection").hide();              
               }
@@ -657,16 +657,22 @@
 
 
 
-  // House Quiz : when user clicks Replay button : page reloaded
+  // House Quiz : when user clicks Replay button : page reloaded  
  (function () {
     const replay = document.querySelector('#replay');
 
-    function clickEasyModeHandler() {
-        document.location.reload();
+    function replayHandler() {
+        document.location.reload();      
     }
 
-    replay.addEventListener('click', clickEasyModeHandler);
+    replay.addEventListener('click', replayHandler);
  })(); 
+
+
+
+
+ 
+
 
 
  
