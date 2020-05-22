@@ -9,10 +9,7 @@
         openNavbar.addEventListener ('mouseover', openNav);
     
     
-    
-    
-    
-    
+       
         const closeNavbar = document.querySelector('#closeNavbar');
     
         function closeNav() {
@@ -30,6 +27,8 @@
     $(document).ready(function () {
       $( ".h1" ).hide().fadeIn(3000);   
       $(".card").hide();
+      $("#charSection").hide();
+      $("#errorSection").hide();
       $("#answer").hide();
       $("#hint").hide();
       $("#replay").hide();
@@ -38,11 +37,11 @@
        // when user search their favourite character
       $ ('#charSearch').click(function(e){
         e.preventDefault();
-  
-        $(".card").show();
+        
+        
 
         let userInput = $("#charName").val();
-  
+
         $.ajax({
           method: "GET",
           url: "http://hp-api.herokuapp.com/api/characters",        
@@ -52,6 +51,12 @@
   
             for (let n of msg) {
               if (userInput.toLowerCase() === (n.name).toLowerCase ()) {
+                console.log("found");
+
+                $("charSection").html("");
+                $("#charSection").show();
+                $("#errorSection").hide();
+                
                 $( ".card-title" ).html("");
                 $( ".card-title" ).append( `<strong>${n.name}</strong>` );
                 
@@ -87,6 +92,17 @@
                 } else if (n.house === 'Hufflepuff') {
                   $( ".card-title" ).append( '&emsp;<img src="img/hufflepuff.png" style="width:80px; height:80px;"/>' );    
                 }
+                break;
+              } else if (userInput.length === 0) {
+                $("#errorSection").html("")
+                $("#errorSection").html("Please enter the character's name").show();
+                $("#charSection").hide();
+              } else {
+                console.log("Not found.."); 
+                
+                $("#errorSection").html("")
+                $("#errorSection").html("Not Found. Please try again!").show();
+                $("#charSection").hide();              
               }
                 
             }    
