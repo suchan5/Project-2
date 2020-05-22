@@ -51,7 +51,6 @@ $(function () {
     easyMode.addEventListener('click', clickEasyModeHandler);
 
 
-
     // Hard-mode is disabled while user plays Easy-mode
     (function () {
         const ifClick = document.querySelector('#easyMode');
@@ -98,8 +97,6 @@ $(function () {
 
 
 
-
-
 // when user clicks Hard-mode button
 (function () {
     const hardMode = document.querySelector('#hardMode');
@@ -110,7 +107,6 @@ $(function () {
     }
 
     hardMode.addEventListener('click', clickHardModeHandler);
-
 
 
     // Easy-mode is disabled while user plays Hard-mode
@@ -154,8 +150,3 @@ $(function () {
 
     stageHard.addEventListener('click', hardModePlay);
 })();
-
-
-
-
-

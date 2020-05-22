@@ -51,7 +51,7 @@
   
             for (let n of msg) {
               if (userInput.toLowerCase() === (n.name).toLowerCase ()) {
-                console.log("found");
+                console.log("Found");
 
                 $("charSection").html("");
                 $("#charSection").show();
@@ -82,7 +82,7 @@
                 $( "#dob" ).append( `${n.dateOfBirth}` ); 
 
 
-                // Image of the matched house will be shown
+                // Image of the Houses will be shown upon searching
                 if (n.house === 'Gryffindor') {
                   $( ".card-title" ).append( '&emsp;<img src="img/gryffindor.png" style="width:80px; height:80px;"/>' );
                 } else if (n.house === 'Slytherin') {
@@ -94,6 +94,8 @@
                 }
                 break;
               } else if (userInput.length === 0) {
+                console.log ("Please enter the character's name");
+
                 $("#errorSection").html("");
                 $("#errorSection").html("Please enter the character's name").show();
                 $("#charSection").hide();
@@ -114,9 +116,6 @@
 
 
       
-
-
-
     // Array for the House Quiz : data from Harry Potter API
     const list = [
       {
@@ -605,6 +604,10 @@
       }
   ];
 
+
+
+
+
   // House Quiz : To retrieve ramdom elemnts(character's name and the picture) from the above array
   const keys = Object.keys(list);
   const randomIndex = keys[Math.floor(Math.random() * keys.length)];
@@ -613,7 +616,7 @@
 
 
 
-  // House Quiz : when user clicks the start button for the House Quiz
+   // House Quiz : when user clicks the start button for the House Quiz
   (function () {
     const houseBtn = document.querySelector('#house_btn');
 
@@ -641,19 +644,27 @@
       let houseInput = $("#houseName").val();
 
       if (houseInput.length === 0) {
+        console.log ("Please enter the house name");
+
         $("#result").html("Please enter the house name").hide().show().hide().fadeIn('slow');
         $("#result").css("color", "purple");
       } else if (houseInput.toLowerCase() === (item.house).toLowerCase()) {
+        console.log ("correct");
+        
         $("#random_div").hide().show().hide().fadeIn('3000');
         $("#result").html("CORRECT!").hide().show().hide().fadeIn('slow');
         $("#result").css("color", "blue");
         $('#answer').hide();
         $("#replay").show(); 
       } else {
+        console.log('wrong');
+
         $("#result").html("WRONG!").hide().show().hide().fadeIn('slow');
         $("#result").css("color", "red");
       }
   });
+
+
 
 
 
@@ -670,18 +681,9 @@
 
 
 
-
  
 
-
-
- 
-
-
-
-
- // Ask About Quidditch : When user clicks the toggle button
- 
+ // Ask About Quidditch : When user clicks the toggle button 
  $(document).ready(function(){
     $(".toggleContent").hide();
 
@@ -701,7 +703,3 @@
         $("#toggleContent4").toggle();
     });
  });
-
- 
-
-

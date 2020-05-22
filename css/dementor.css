@@ -1,7 +1,8 @@
 @font-face {
     font-family: 'AbrilFatface-Regular';
-    src: url('/fonts/AbrilFatface-Regular.ttf') format('truetype'); 
+    src: url('../fonts/AbrilFatface-Regular.ttf') format('truetype'); 
 }
+
 
 
 body {
@@ -9,8 +10,9 @@ body {
 }
 
 
+
 .stage {
-    background-image: url('/img/7.jpg');
+    background-image: url('../img/7.jpg');
     background-repeat: no-repeat;
     background-size: cover;      
     background-position: center; 
@@ -22,19 +24,17 @@ body {
 }
 
 
+
 p {
     text-align: center;       
 }
+
 
 
 h2 {
     text-align: center;
     color: red;
 }
-
-
-
-
 
 
 
@@ -46,6 +46,7 @@ h2 {
         transform: translateX(90vw);
     }
 }
+
 
 
 .dementor {
@@ -60,6 +61,7 @@ h2 {
 }
 
 
+
 .dementorHard {
     position: absolute;
     width: 150px;
@@ -72,89 +74,102 @@ h2 {
 }
 
 
+
 .dementor.a {
     left: 2%;
     bottom: 35%;
-    background-image: url('/img/dementor1.png');
+    background-image: url('../img/dementor1.png');
     animation-duration: 2s;
 }
+
 
 
 .dementor.b {
     left: 3%;
     bottom: 3%;
-    background-image: url('/img/dementor2.png');
+    background-image: url('../img/dementor2.png');
     animation-duration: 3s;
 }
+
 
 
 .dementor.c {
     left: 7%;
     bottom: 10%;
-    background-image: url('/img/dementor3.png');
+    background-image: url('../img/dementor3.png');
     animation-duration: 2s;
 }
+
 
 
 .dementor.d {
     left: 5%;
     bottom: 20%;
-    background-image: url('/img/dementor4.png');
+    background-image: url('../img/dementor4.png');
     animation-duration: 2.5s;
 }
+
 
 
 .dementorHard.a {
     left: 2%;
     bottom: 35%;
-    background-image: url('/img/dementor1.png');
+    background-image: url('../img/dementor1.png');
     animation-duration: 2s;
 }
+
 
 
 .dementorHard.b {
     left: 3%;
     bottom: 3%;
-    background-image: url('/img/dementor2.png');
+    background-image: url('../img/dementor2.png');
     animation-duration: 3s;
 }
+
 
 
 .dementorHard.c {
     left: 7%;
     bottom: 10%;
-    background-image: url('/img/dementor3.png');
+    background-image: url('../img/dementor3.png');
     animation-duration: 2s;
 }
+
 
 
 .dementorHard.d {
     left: 5%;
     bottom: 20%;
-    background-image: url('/img/dementor4.png');
+    background-image: url('../img/dementor4.png');
     animation-duration: 2.5s;
 }
+
+
 
 .dementorHard.e {
     left: 4%;
     bottom: 25%;
-    background-image: url('/img/dementor5.png');
+    background-image: url('../img/dementor5.png');
     animation-duration: 4s;    
 }
+
 
 
 .dementorHard.f {
     left: 26%;
     bottom: 7%;
-    background-image: url('/img/dementor6.png');
+    background-image: url('../img/dementor6.png');
     animation-duration: 3.5s;
 }
+
 
 
 #replay {
     margin-left: 5px;
     cursor: pointer;
 }
+
 
 
 .btn {
@@ -164,13 +179,18 @@ h2 {
     font-family: 'Source Sans Pro', sans-serif;
 }
 
+
+
 .homeBtn {
     color: black;
 }
 
+
+
 .active {
     background: #666;
 }
+
 
 
 .inactive {
@@ -178,9 +198,11 @@ h2 {
 }
 
 
+
 reset {
     display: none;
 }
+
 
 
 #dialogueText p {

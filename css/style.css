@@ -1,11 +1,11 @@
 @font-face {
     font-family: 'AbrilFatface-Regular';
-    src: url('/fonts/AbrilFatface-Regular.ttf') format('truetype'); 
+    src: url('../fonts/AbrilFatface-Regular.ttf') format('truetype'); 
 }
 
 @font-face {       
     font-family: 'HarryPotterAndTheDingbats-LKKg';
-    src: url('/fonts/HarryPotterAndTheDingbats-LKKg.ttf') format('truetype'); 
+    src: url('../fonts/HarryPotterAndTheDingbats-LKKg.ttf') format('truetype'); 
 }
 
 body {
@@ -58,7 +58,6 @@ body {
     font-size: 60px;
 }
  
-
 @media screen and (max-width: 400px) {
     .overlay {overflow-y: auto;}
     .overlay a {font-size: 1.7rem;}
@@ -80,7 +79,7 @@ body {
 
 .masthead .container-fluid {
     height: 75vh;
-    background-image: linear-gradient(to right, rgba(96, 96, 99, 0.411), rgba(153, 149, 149, 0.329)),  url('/img/11.png');
+    background-image: linear-gradient(to right, rgba(96, 96, 99, 0.411), rgba(153, 149, 149, 0.329)),  url('../img/11.png');
     background-size: cover;
     background-repeat: no-repeat; 
     background-position: center; 
@@ -113,8 +112,6 @@ img {
 .masthead span, .masthead .h1 {
     color: white; 
 }
-
-
 
 
 
@@ -203,10 +200,11 @@ img {
 
 
 
+
 /* House quiz section*/
 .house {
     height: 80vh;
-    background-image: url(/img/bgimg.png);
+    background-image: url('../img/bgimg.png');
     background-size: cover;
     background-repeat: no-repeat; 
     background-position: center; 
@@ -233,7 +231,6 @@ img {
     border: #333 solid 1px;
     text-align: center;
 }
-
 
 .house h2 {
     font-family: 'AbrilFatface-Regular', Arial, Helvetica, sans-serif;
@@ -262,7 +259,7 @@ img {
 /*Dementor game section*/
 .game {
     height: 100vh;
-    background-image: linear-gradient(to right, rgba(96, 96, 99, 0.52), rgba(31, 30, 30, 0.253)), url(/img/dementorImg.jpeg);
+    background-image: linear-gradient(to right, rgba(96, 96, 99, 0.52), rgba(31, 30, 30, 0.253)), url('../img/dementorImg.jpeg');
     background-size: cover;
     background-repeat: no-repeat;  
     background-position: center;  
@@ -350,9 +347,9 @@ img {
 
 
 
-/* Quidditch section*/
+/* Ask about Quidditch section*/
 .quidditch {
-    background-image: url(/img/quidditch.jpg);
+    background-image: url('../img/quidditch.jpg');
     background-size: cover;
     background-repeat: no-repeat; 
     background-position: center; 
