@@ -287,7 +287,11 @@ img {
     color:  #250d3b
 }
 
-@media only screen and (max-width:400px){
+@media only screen and (max-width:600px){
+    .house {
+        height: 100%;
+    }
+
     .house .quizbox {        
         padding-top: 0.3rem;
         padding-bottom: 0.3rem;        
