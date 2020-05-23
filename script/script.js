@@ -654,7 +654,7 @@
     function randomFunction() {  
         $('.house h2').css('color','white');        
         $('#house_btn, .house p, .house h6').hide();
-        $('#random_div').append(`<img src="${item.image}" style="width:250px; height:250px;"/> <br><p>${item.name}</p> `);
+        $('#random_div').append(`<img src="${item.image}"/> <br><p>${item.name}</p> `);
         $("#answer").show(); 
         $("#hint").fadeIn('slow');
     }

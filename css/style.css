@@ -245,28 +245,22 @@ img {
 
 /* House quiz section*/
 .house {
-    height: 80vh;
     background-image: url('../img/bgimg.png');
     background-size: cover;
     background-repeat: no-repeat; 
     background-position: center; 
     font-family: 'Source Sans Pro', sans-serif;  
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
 
 .house .quizbox {    
     border-radius: 4px;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
     background-color: rgba(238, 237, 227, 0.589);
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-bottom: 5rem;
+    padding-top: 5rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
 }
 
 .house p {
@@ -287,15 +281,52 @@ img {
     color:  #250d3b
 }
 
-@media only screen and (max-width:600px){
+#answer {
+    width: 250px;
+}
+
+#random_div {
+    width: 250px;
+}
+
+#random_div img {
+    width: 250px;
+    height: 250px;
+}
+
+@media only screen and (max-width:375px){
     .house {
         height: 100%;
     }
 
     .house .quizbox {        
-        padding-top: 0.3rem;
-        padding-bottom: 0.3rem;        
+        padding-top: 3rem;
+        padding-bottom: 3rem;        
     }    
+
+    #answer {
+        width: 220px;
+        padding-right: 1rem;
+    }
+
+    #random_div {
+        width: 220px;
+        padding-right: 1rem;
+    }
+
+    #random_div img {
+        width: 220px;
+        height: 220px;
+        padding-right: 1rem;
+    }
+    
+    #result, #hint {
+        font-size: 0.9rem;
+    }
+
+    #houseName, #houseSearch {
+        font-size: 0.8rem;
+    }
 }
 
 
