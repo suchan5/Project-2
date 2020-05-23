@@ -38,6 +38,7 @@ h2 {
 
 
 
+/* To make the Dementors moving */
 @keyframes moving {
     from {
         transform: translateX(0);
@@ -49,6 +50,7 @@ h2 {
 
 
 
+/* Easy mode : Dementors move alternately */
 .dementor {
     position: absolute;
     width: 150px;
@@ -62,6 +64,7 @@ h2 {
 
 
 
+/* Hard mode : Dementors move alternate-reversely */
 .dementorHard {
     position: absolute;
     width: 150px;
