@@ -23,10 +23,10 @@
 
 
 
-    //
+    // Button for user to scroll back to the top
     (function () {        
-        // When the user scrolls down 20px from the top of the document, show the button
-        window.onscroll = function() {scrollFunction()};
+        // When the user scrolls down 200px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction();};
 
         function scrollFunction() {
             if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
@@ -64,14 +64,14 @@
       $("#replay").hide();
 
 
-       // when user search their favourite character
+       // Search Characters : when user search their favourite character
       $ ('#charSearch').click(function(e){
-        e.preventDefault();
-        
+        e.preventDefault();       
         
 
         let userInput = $("#charName").val();
 
+        // Get Harry Potter API
         $.ajax({
           method: "GET",
           url: "http://hp-api.herokuapp.com/api/characters",        
@@ -135,8 +135,7 @@
                 $("#errorSection").html("");
                 $("#errorSection").html("Not Found. Please try again!").show();
                 $("#charSection").hide();              
-              }
-                
+              }                
             }    
           });  
       });
@@ -643,6 +642,8 @@
   const randomIndex = keys[Math.floor(Math.random() * keys.length)];
   const item = list[randomIndex];
   console.log(item.name, item.house, item.image); 
+
+
 
 
 
