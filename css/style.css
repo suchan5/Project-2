@@ -374,7 +374,6 @@ img {
     background-position: center;  
     background-attachment: fixed; 
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;   
     font-family: 'Source Sans Pro', sans-serif;  
@@ -449,6 +448,15 @@ img {
     .game .btnPosition {
         text-align: left;
         width: 50%;
+    }
+
+    .game {
+        height: 100%;
+    }
+
+    .game .dementorBox{  
+        margin-top: 5rem;  
+        margin-bottom: 5rem;
     }
 }
 
