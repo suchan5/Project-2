@@ -1,6 +1,7 @@
 # Interactive Frontend Development Milestone Project
+### Welcome to Pottermost
 
-[My Portfolio Website](https://suchan5.github.io/Project-2/) - Welcome to Pottermost<br>
+[My Portfolio Website](https://suchan5.github.io/Project-2/)<br>
 [My Github Page](https://github.com/suchan5/Project-2)
 
 
@@ -23,12 +24,12 @@ It comprises of four sections and users can access each sections of the website 
 * [Google Fonts](https://fonts.google.com)  - it was used for typography for design effect.
 * [Font Awesome](https://fontawesome.com) - it was used for concise and intuitive design effect with using icons.
 # Structure
+#### Each sections are presented with <h> tag for clear visibility and understanding of the theme.
+#### Each sections are interactive that makes it easier for users to explore the contents throught out the website.
 1. Search Characters section is the main theme of them website and placed at the top.
 2. House Quiz section is strategically placed below the Search Character section so that the users can utilize the Search Character section above for hints.
 3. Dementor Game secton comes the next to maintain users' interest with interaction. Users can play game by clicking the flying Dementors to get rid of them and win the game.
 4. Ask About Qudditch section is placed at the bottom of the website as this is the informative section with text information which involes the least interaction with users.
-#### Each sections are presented with <h> tag for clear visibility and understanding of the theme.
-#### Each sections are interactive that makes it easier for users to explore the contents throught out the website.
 # UX Design
 This website is created with a focus on UX that is:
 1. Simple & clear :
@@ -69,3 +70,66 @@ This website is created with a focus on UX that is:
 - Any external links(e.g. official social medias of Harry Potter) are opend in the new tab upon clicking.
 #### Button disabled when the other button is activated :
 - For Dementor Game section, there are two modes of the game; easy and hard. When users play easy-mode, hard-mode button is disabled from clicking in order to prevent misclicking or disrupting the game, and vise versa.
+# Responsive Design
+The main purpose of the test on the responsive design is to ensure that the website works well and looked organized in different sizes of the media. It was acheived by using Bootstrap grid, media query, and 'Inspect' function from Google Chrome to test.
+
+![screenshot of the Pottermost run on 'Am I Responsive' website](img/responsiveness_test.png)
+
+# Deployment 
+Pottermost is deployed using Github with protocol 'https'.
+#### Errors & differences detected 
+There are a few features detected which shows error and are different from the development in the VS code :
+1. API was not working :
+
+![mixed content block](img/api_error.jpeg)
+
+Search Characters section was not working when I typed for a character's name and error message appeared as above.
+This was due to running an HTTP AJAX operation in an HTTPS page. I resolved this issue by adding the following meta tag inside the head tag of my 'index.html' file.
+```html
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+```
+2. Responsiveness issue
+
+![Dementor section goes out of the box](img/responsiveness_issue.png)
+
+It was working well without any error on the 'Inspect' function from Google Chrome while developing.
+However when I was testing on my phone after deployment,the Dementor Game section goes out of the container and texs were overlapped when I type in the text bar.
+
+This was due to the different set of testing environment where in VS code, there was no keyboard popping up when I type, whereas on the phone, the keybord pop up which i could not put under my consideration while developing.
+
+This was resolved by making the House Quiz section and Dementor Game section responsive by using Bootstrap to add 'container' and put the contents/texts within the container. 
+```html
+<div class="container">
+```
+Also, I used media query in CSS to make the font-size and image sizes smaller to make it more presentable and responsive on smaller size of the devices. Font-size, margin, padding in CSS file were rectified from 'px' to 'em' or '%'.
+# Testing
+* To ensure that there are no broken images or links.
+* To ensure that fonts(ttf) are working well after deployment.
+* To ensure that the website is responsive on different devices.
+* To ensure that the website runs well on different browsers.
+
+
+I sent the deployed URL to friends and family to test whether the website works responsively without broken images or links in different screen sizes.
+#### Devices tested (no error detected)
+* Oppo R11
+* iPhone XR
+* iPhone 6S
+* Galaxy S20+
+* Galaxy Tab A
+* MacBook Pro
+* HanSung Computer Ultron 2454C
+
+
+I tested on different browsers on my Macbook Pro to ensure that the website works well.
+#### Browsers tested (error detected on Safari and IE11)
+* Google Chrome 
+* Safari 
+* Firefox 
+* Internet Exporer 
+
+
+* There is an error detected on Safari, which is when the navbar is expanded, the flip effect applied with AOS does not function properly, causing the translucent white box (only the half of it) to flash and flip on top of the navbar instead of beneath it.
+
+
+This issue still remains unresolved. 
+* There is an error detected on IE 11, whereby the Search Characters section is not displayed and does not function properly. The whole section is aligned to the centre, the texts are displayed vertically and the search bar is not expanded fully. 
