@@ -32,8 +32,8 @@ It comprises of four sections and users can access each sections of the website 
 * House Quiz section is strategically placed below the Search Character section so that the users can utilize the Search Character section above for hints.
 * Dementor Game secton comes the next in order to maintain users' interest. Users can play game by clicking the flying Dementors to get rid of them and win the game.
 * Ask About Qudditch section is placed at the bottom of the website as this is the informative section with text which involes the least interaction with users.
-# UX Design
-This website is created with a focus on UX that is:
+# UI/UX Design
+This website is created with a focus on UI/UX that is:
 1. Simple & clear :
 
 - This is achieved by giving consistency in clear visual style throughout the website by grouping information into four different themes and sections. Also, I give enough spacing(padding and margin) for better readability of the contents.
@@ -47,7 +47,7 @@ This website is created with a focus on UX that is:
 - To give the texts a better visibility over the background images, I have added a translucent white box so that the texts are more readable despite the use of colourful background.
 - Images are not pixelated and uniform in size on different media sizes.
 - There is a contrast between contents and background images.
-- For fonts, dark gray and white were chosen as two main colours in order to give consistency in design effect (coloful texts are used only for the error messages and appear upon click or submit).
+- For fonts, dark gray and white were chosen as two main colours in order to give consistency in design effect (coloful texts are used only when the error messages appear upon clicking or submitting).
 
 ## Features added for improved UX
 #### Navbar : 
@@ -67,13 +67,13 @@ This website is created with a focus on UX that is:
 - For Dementor Game section, home button is added that users do not need to use the back button.
 - For Dementor Game and House Quiz sections, replay buttons are added so that users can play again as many times as they want without reloading or reaccessing the website.
 #### Toggle button :
-- For Ask About Quidditch section, which is the only informative section among the four, I have added a button to toggle the text contents so that the section will not look too wordy.
+- For Ask About Quidditch section, which is the only narrative section among the four, I have added a button to toggle the text contents so that the section will not look too wordy.
 #### Open in the new tab :
 - Any external links(e.g. official social medias of Harry Potter) are opend in the new tab upon clicking.
 #### Button disabled when the other button is activated :
 - For Dementor Game section, there are two modes of the game; easy and hard. When users play easy-mode, hard-mode button is disabled from clicking in order to prevent misclicking or disrupting the game, and vise versa.
 # Responsive Design
-The main purpose of the test on the responsive design is to ensure that the website works well and looked organized in different sizes of the media. It was acheived by using Bootstrap grid, media query, and 'Inspect' function from Google Chrome.
+The main purpose of the test on the responsive design is to ensure that the website works well and looked organized in different sizes of the media. It was acheived by using Bootstrap, media query, and 'Inspect' function from Google Chrome.
 
 ![screenshot of the Pottermost run on 'Am I Responsive' website](img/responsiveness_test.png)
 
@@ -94,16 +94,16 @@ This was due to running an HTTP AJAX operation in an HTTPS page. I resolved this
 
 ![Dementor section goes out of the box](img/responsiveness_issue.png)
 
-It was working well without any error on the 'Inspect' function from Google Chrome while developing.
-However when I was testing on my phone after deployment, the Dementor Game section goes out of the container and texts were overlapped as above picture.
+It was working well without any error on the 'Inspect' function from Google Chrome while I was developing.
+However when I tested on my phone after deployment, the Dementor Game section goes out of the container and the texts were overlapped as above picture.
 
 This was due to the different set of testing environment where in VS code, there was no keyboard popping up when I typed, whereas on the phone, the keybord poped up which i did not put under my consideration while I was developing.
 
-This was resolved by making the House Quiz section and Dementor Game section responsive by using Bootstrap by adding 'container' as below code and put the contents/texts within the container. 
+This was resolved by making the House Quiz section and Dementor Game section responsive by using Bootstrap, adding 'container' as below code and put the contents/texts within the container. 
 ```html
 <div class="container">
 ```
-Also, I used media query in CSS to make the font-size and image sizes smaller to make it more presentable and responsive even on smaller size of the devices. Font-size, margin, padding in CSS file were rectified from 'px' to 'em' or '%'.
+Also, I used media query in CSS to make the font-size and image sizes smaller to make it more presentable and responsive even on the smaller size of devices. Font-size, margin, padding in CSS file were also rectified from 'px' to 'em' or '%' where necessary.
 # Testing
 * To ensure that there are no broken images or links.
 * To ensure that fonts(ttf) are working well after deployment.
@@ -133,7 +133,7 @@ After resolving the issues detected while deploying, I sent the deployed URL to 
 ![Safari issue](img/safari_issue.png)
 
 This issue still remains unresolved. 
-###### There is error detected on IE 11, whereby the interface designed are not displayed and JavaScript does not function properly. For example, for the Search Character section, the texts are displayed vertically and the search bar is not expanded fully, search funtions are not working.
+###### There is another error detected on IE 11, whereby the interface designed are not displayed and JavaScript does not function properly. For example, for the Search Character section, the texts are displayed vertically and the search bar is not expanded fully, search funtions are not working.
 ![IE11 issue 1](img/IE_issue1.jpeg)
 ![IE11 issue 2](img/IE_issue2.jpeg)
 
