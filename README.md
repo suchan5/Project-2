@@ -73,7 +73,7 @@ This website is created with a focus on UX that is:
 # Responsive Design
 The main purpose of the test on the responsive design is to ensure that the website works well and looked organized in different sizes of the media. It was acheived by using Bootstrap grid, media query, and 'Inspect' function from Google Chrome to test.
 
-![screenshot of the Pottermost run on 'Am I Responsive' website](img/responsiveness_test.png)
+[screenshot of the Pottermost run on 'Am I Responsive' website](img/responsiveness_test.png)
 
 # Deployment 
 Pottermost is deployed using Github with protocol 'https'.
@@ -81,7 +81,7 @@ Pottermost is deployed using Github with protocol 'https'.
 There are a few features detected which shows error and are different from the development in the VS code :
 1. API was not working :
 
-![mixed content block](img/api_error.jpeg)
+[mixed content block](img/api_error.jpeg)
 
 Search Characters section was not working when I typed for a character's name and error message appeared as above.
 This was due to running an HTTP AJAX operation in an HTTPS page. I resolved this issue by adding the following meta tag inside the head tag of my 'index.html' file.
@@ -90,7 +90,7 @@ This was due to running an HTTP AJAX operation in an HTTPS page. I resolved this
 ```
 2. Responsiveness issue
 
-![Dementor section goes out of the box](img/responsiveness_issue.png)
+[Dementor section goes out of the box](img/responsiveness_issue.png)
 
 It was working well without any error on the 'Inspect' function from Google Chrome while developing.
 However when I was testing on my phone after deployment,the Dementor Game section goes out of the container and texs were overlapped when I type in the text bar.
@@ -109,8 +109,8 @@ Also, I used media query in CSS to make the font-size and image sizes smaller to
 * To ensure that the website runs well on different browsers.
 
 
-I sent the deployed URL to friends and family to test whether the website works responsively without broken images or links in different screen sizes.
-#### Devices tested (no error detected)
+#### After resolving the issues detected while deploying, I sent the deployed URL to friends and family to test whether the website works responsively without broken images or links in different screen sizes. Also, tests was done on different browsers to ensure that the website works well.
+##### Devices tested 
 * Oppo R11
 * iPhone XR
 * iPhone 6S
@@ -119,17 +119,20 @@ I sent the deployed URL to friends and family to test whether the website works 
 * MacBook Pro
 * HanSung Computer Ultron 2454C
 
-
-I tested on different browsers on my Macbook Pro to ensure that the website works well.
-#### Browsers tested (error detected on Safari and IE11)
+##### Browsers tested 
 * Google Chrome 
 * Safari 
 * Firefox 
 * Internet Exporer 
 
+##### Error detected on Safari and IE11
+###### There is an error detected on Safari, which is when the navbar is expanded, the flip effect applied with AOS does not function properly, causing the translucent white box (only the half of it) to flash and flip on top of the navbar instead of beneath it.
 
-* There is an error detected on Safari, which is when the navbar is expanded, the flip effect applied with AOS does not function properly, causing the translucent white box (only the half of it) to flash and flip on top of the navbar instead of beneath it.
-
+[Safari issue](img/safari_issue.jpeg)
 
 This issue still remains unresolved. 
-* There is an error detected on IE 11, whereby the Search Characters section is not displayed and does not function properly. The whole section is aligned to the centre, the texts are displayed vertically and the search bar is not expanded fully. 
+###### There is error detected on IE 11, whereby the Search Characters section is not displayed and JavaScript does not function properly. The whole section is aligned to the centre, the texts are displayed vertically and the search bar is not expanded fully. 
+[IE11 issue](img/IE_issue1.jpeg)
+[Safari issue](img/IE_issue2.jpeg)
+
+This issue still remains unresolved. 
