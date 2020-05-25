@@ -73,7 +73,7 @@ This website is created with a focus on UX that is:
 # Responsive Design
 The main purpose of the test on the responsive design is to ensure that the website works well and looked organized in different sizes of the media. It was acheived by using Bootstrap grid, media query, and 'Inspect' function from Google Chrome to test.
 
-[screenshot of the Pottermost run on 'Am I Responsive' website](img/responsiveness_test.png)
+![screenshot of the Pottermost run on 'Am I Responsive' website](img/responsiveness_test.png)
 
 # Deployment 
 Pottermost is deployed using Github with protocol 'https'.
@@ -81,8 +81,7 @@ Pottermost is deployed using Github with protocol 'https'.
 There are a few features detected which shows error and are different from the development in the VS code :
 1. API was not working :
 
-[mixed content block](img/api_error.jpeg)
-
+![mixed content block](img/api_error.jpeg){: width="100" height="100"} 
 Search Characters section was not working when I typed for a character's name and error message appeared as above.
 This was due to running an HTTP AJAX operation in an HTTPS page. I resolved this issue by adding the following meta tag inside the head tag of my 'index.html' file.
 ```html
@@ -90,7 +89,7 @@ This was due to running an HTTP AJAX operation in an HTTPS page. I resolved this
 ```
 2. Responsiveness issue
 
-[Dementor section goes out of the box](img/responsiveness_issue.png)
+![Dementor section goes out of the box](img/responsiveness_issue.png)
 
 It was working well without any error on the 'Inspect' function from Google Chrome while developing.
 However when I was testing on my phone after deployment,the Dementor Game section goes out of the container and texs were overlapped when I type in the text bar.
@@ -128,11 +127,34 @@ Also, I used media query in CSS to make the font-size and image sizes smaller to
 ##### Error detected on Safari and IE11
 ###### There is an error detected on Safari, which is when the navbar is expanded, the flip effect applied with AOS does not function properly, causing the translucent white box (only the half of it) to flash and flip on top of the navbar instead of beneath it.
 
-[Safari issue](img/safari_issue.jpeg)
+![Safari issue](img/safari_issue.jpeg)
 
 This issue still remains unresolved. 
-###### There is error detected on IE 11, whereby the Search Characters section is not displayed and JavaScript does not function properly. The whole section is aligned to the centre, the texts are displayed vertically and the search bar is not expanded fully. 
-[IE11 issue](img/IE_issue1.jpeg)
-[Safari issue](img/IE_issue2.jpeg)
+###### There is error detected on IE 11, whereby the interface designed are not displayed and JavaScript does not function properly. For example, for the Search Character section, the texts are displayed vertically and the search bar is not expanded fully, search funtions are not working.
+![IE11 issue 1](img/IE_issue1.jpeg)
+![IE11 issue 2](img/IE_issue2.jpeg)
 
 This issue still remains unresolved. 
+## Credit
+#### API
+* [HP-API](https://hp-api.herokuapp.com/)
+#### Font
+* [Harry Potter and the Dingbats (ttf)](https://www.dafont.com/harry-potter-and-the-dingbats.font)
+* [Abril Fatface (ttf)](https://fonts.google.com/specimen/Abril+Fatface)
+#### Images
+* [FreeIconsPng](https://www.freeiconspng.com/img/32548) - for the png imgaes of Harry Potter logo used at Home 
+* [FANDOM](https://harrypotterbooks.fandom.com/wiki/Three_Broomsticks_Inn) - for the background image used at Home
+* [Toppng](https://toppng.com/ravenclaw-sticker-hogwarts-house-crest-ravenclaw-PNG-free-PNG-Images_175340)- for the House image used in search results in Search Character section
+* [wallpaper.dog](https://wallpaper.dog/reading-harry-potter-wallpapers) - for the background image used in House Quiz section
+* [TIME](https://time.com/4209231/harry-potter-spell/) - for the background image used in Dementor game section
+* [HiClipArt](https://www.hiclipart.com/search?clipart=Dementor) - for the imgaes of flying Dementors used at Dementor Game
+* [ze-robot.com](https://ze-robot.com/img/harry-potter-pottermore-explore-hogwarts-wallpapers-46.html) - for the background castle image used in Dementor Game
+* [HiClipArt](https://www.wizardingworld.com/features/cool-british-and-irish-quidditch-teams-to-support-that-arent-the-chudley-cannons) - for the background image used in Quidditch section
+#### Ackowledgement
+* [W3schools](https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_overlay2) - for the fullscreen overlay navbar
+* [W3schools](https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_scroll_to_top) - for the button to scroll back to the top
+* [W3schools](https://www.w3schools.com/css/css3_buttons.asp) - for the 'Save Hogwarts' button used in Dementor Game section
+* [Spotify](https://developer.spotify.com/documentation/widgets/generate/play-button/) - for the Harry Potter background music placed on the navbar
+* [Stackoverflow](https://stackoverflow.com/questions/53334851/loop-through-object-and-get-random-item-in-javascript) - for the Math.random code
+* [Google ](https://www.google.com/search?rlz=1C5CHFA_enSG893SG895&sxsrf=ALeKk00ox8gC1aBsvO4kqd4NUsajdjYGYQ%3A1590386886155&ei=xmDLXtH8CNi2rQHZ57DYBQ&q=harry+potter+quidditch&oq=harry+potter+quidditch&gs_lcp=CgZwc3ktYWIQAzIECCMQJzIECCMQJzIGCAAQBxAeMgYIABAHEB4yBggAEAcQHjIGCAAQBxAeMgYIABAHEB4yBggAEAcQHjIGCAAQBxAeMgYIABAHEB46BAgAEEc6BwgjELACECc6BwgjELECECdQs15Yl2xgwm1oAHABeACAATyIAZ4FkgECMTOYAQCgAQGqAQdnd3Mtd2l6&sclient=psy-ab&ved=0ahUKEwjR953rrM7pAhVYWysKHdkzDFsQ4dUDCAw&uact=5) - for Ask About Quidditch information 
+   
