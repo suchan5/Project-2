@@ -1,7 +1,7 @@
 # Interactive Frontend Development Milestone Project
 ### Welcome to Pottermost
 
-[My Portfolio Website](https://suchan5.github.io/Project-2/)<br>
+[Pottermost](https://suchan5.github.io/Project-2/)<br>
 [My Github Page](https://github.com/suchan5/Project-2)
 
 
